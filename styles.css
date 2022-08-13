@@ -503,7 +503,7 @@ border-radius: 5px;
         width: 4.5rem;
     }
     .mobile-title-wrapper {
-        width:fit-content;
+        width:min-content;
     }
     .letter {
         font-family: "nirutt-header-font", sans-serif;
