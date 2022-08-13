@@ -6,25 +6,26 @@
 @font-face {
     font-family: nirutt-standard-font;
     src: url(./assets/fonts/52ce32a338a3057de64c3528a8571a7f.ttf);
-    font-weight: 300;
-}
-@font-face {
-    font-family: nirutt-standard-font;
-    src: url(./assets/fonts/dae5654a2e5ffdaf0057259047ba7834.ttf);
     font-weight: 400;
 }
 @font-face {
     font-family: nirutt-standard-font;
-    src: url(./assets/fonts/ac1dbc3a2cc16a39ee69152e60e7d608.ttf);
+    src: url(./assets/fonts/dae5654a2e5ffdaf0057259047ba7834.ttf);
     font-weight: 500;
 }
 @font-face {
     font-family: nirutt-standard-font;
-    src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
+    src: url(./assets/fonts/ac1dbc3a2cc16a39ee69152e60e7d608.ttf);
     font-weight: 600;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
+    font-weight: 700;
 }
 body {
     background-color: #F0F1F2;
+    padding-bottom: 2rem;
 }
 a {
     font-family: "nirutt-standard-font", sans-serif;
@@ -511,6 +512,63 @@ border-radius: 5px;
         line-height: 3.75rem;
         color: black;
     }
+    /* project section */
+    .project-wrapper {
+        margin-top: 8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .main-project-wrapper {
+        background-color: #101010;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        color: #F0F1F2;
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-year-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;    
+    }
+    .project-description-text {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-discipline-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
 }
 #end-letter {
     margin-right: 0;
