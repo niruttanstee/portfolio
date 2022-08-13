@@ -50,11 +50,16 @@ border-radius: 5px;
 /* large desktop screen */
 @media screen and (min-width: 1200px) {
     .navigation-bar {
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-top: 3rem;
+        width: 100vw;
+        padding-top: 2rem;
+        padding-right: 2rem;
         margin: 0;
-        width: 100%;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     a {
         text-decoration: none;
@@ -110,11 +115,16 @@ border-radius: 5px;
 /* desktop screen */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .navigation-bar {
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-top: 3rem;
+        width: 100vw;
+        padding-top: 2rem;
+        padding-right: 2rem;
         margin: 0;
-        width: 100%;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     a {
         text-decoration: none;
@@ -141,8 +151,7 @@ border-radius: 5px;
         padding-bottom: 0.8rem;
         padding-left: 1.5rem;
         border-radius: 1rem;
-        margin-right: 1.25rem;
-        margin-left: 1.25rem;
+        margin-left: 2.5rem;
         transition: 600ms;
     }
     .desktop-menu-button:hover {
@@ -152,8 +161,7 @@ border-radius: 5px;
         padding-right: 1.5rem;
         padding-bottom: 0.8rem;
         padding-left: 1.5rem;
-        margin-right: 1.25rem;
-        margin-left: 1.25rem;
+        margin-left: 2.5rem;
         border-radius: 1rem;
     }
     .header-wrapper {
@@ -170,11 +178,16 @@ border-radius: 5px;
 /* tablet screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .navigation-bar {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 100vw;
         padding-top: 2rem;
+        padding-right: 2rem;
         margin: 0;
-        width: 100%;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     a {
         text-decoration: none;
@@ -214,12 +227,11 @@ border-radius: 5px;
     .navigation-bar {
         padding-top: 1.5rem;
         margin: 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
-
     }
     .navigation-wrapper {
         width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     a {
         text-decoration: none;
@@ -252,32 +264,21 @@ border-radius: 5px;
     }
     .desktop-menu-button {
         display: none;
-    }
-    .header-wrapper {
-        width: 100vw;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    .letter {
-        font-family: "nirutt-header-font", sans-serif;
-        font-size: 3.75rem;
-        line-height: 4rem;
-        color: black;
-    }
-    .illustration {
-        width: 4.5rem;
-        margin-bottom: 1rem;
     }
 }
 /* mobile screen */
 @media screen and (max-width: 575px) {
     .navigation-bar {
         width: 100vw;
-        padding-left: 0.5rem;
+        padding-top: 1rem;
+        padding-right: 2rem;
+        margin: 0;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        margin: 0;
         padding-right: 0.5rem;
-        padding-top: 1.5rem;
+        padding-left: 0.5rem;
     }
     a {
         text-decoration: none;
@@ -310,22 +311,5 @@ border-radius: 5px;
     }
     .desktop-menu-button {
         display: none;
-    }
-    .header-wrapper {
-        width: 100vw;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    .letter {
-        font-family: "nirutt-header-font", sans-serif;
-        font-size: 3.75rem;
-        line-height: 4rem;
-        color: black;
-    }
-    .illustration {
-        width: 4.5rem;
-        margin-bottom: 1rem;
     }
 }
