@@ -1,0 +1,329 @@
+/* font imports */
+@font-face {
+    font-family: nirutt-header-font;
+    src: url(./assets/fonts/NHaasGroteskDSPro-55Rg.otf);
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/52ce32a338a3057de64c3528a8571a7f.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/dae5654a2e5ffdaf0057259047ba7834.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/ac1dbc3a2cc16a39ee69152e60e7d608.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
+    font-weight: 600;
+}
+body {
+    background-color: #F0F1F2;
+}
+a {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* Firefox scrollbar */
+html {
+    scrollbar-color: #0744F5 transparent;
+}
+  
+/* WebKit and Chromiums scrollbar */
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+background: #0744F5;
+border-radius: 5px;
+}
+/* large desktop screen */
+@media screen and (min-width: 1200px) {
+    .navigation-bar {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 3rem;
+        margin: 0;
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .day-night-wrapper {
+        width: fit-content;
+    }
+    .day-night-button {
+        width: 60px;
+        height: 28.18px;
+        background-image: url("./assets/images/day-mode-switch.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mobile-menu-button {
+        display: none;
+    }
+    .desktop-menu-button {
+        width: fit-content;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+        transition: 600ms;
+    }
+    .desktop-menu-button:hover {
+        color: #F0F1F2;
+        background-color: black;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+        border-radius: 1rem;
+    }
+    .header-wrapper {
+        width: 100vw;
+        padding-top: 11.25rem;
+        padding-right: 6rem;
+        padding-bottom: 11.25rem;
+        padding-left: 6rem;
+    }
+    .mobile-title-header {
+        display:none;
+    }
+}
+/* desktop screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .navigation-bar {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 3rem;
+        margin: 0;
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .day-night-wrapper {
+        width: fit-content;
+    }
+    .day-night-button {
+        width: 60px;
+        height: 28.18px;
+        background-image: url("./assets/images/day-mode-switch.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mobile-menu-button {
+        display: none;
+    }
+    .desktop-menu-button {
+        width: fit-content;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+        transition: 600ms;
+    }
+    .desktop-menu-button:hover {
+        color: #F0F1F2;
+        background-color: black;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+        border-radius: 1rem;
+    }
+    .header-wrapper {
+        width: 100vw;
+        padding-top: 11.25rem;
+        padding-right: 6rem;
+        padding-bottom: 11.25rem;
+        padding-left: 6rem;
+    }
+    .mobile-title-header {
+        display:none;
+    }
+}
+/* tablet screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .navigation-bar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        margin: 0;
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .day-night-button {
+        width: 60px;
+        height: 28.18px;
+        background-image: url("./assets/images/day-mode-switch.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mobile-menu-button {
+        width: fit-content;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        transition: 600ms;
+    }
+    .mobile-menu-button:hover {
+        color: #F0F1F2;
+        background-color: black;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+    }
+    .desktop-menu-button {
+        display: none;
+    }
+}
+/* larger mobile screen */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .navigation-bar {
+        padding-top: 1.5rem;
+        margin: 0;
+        padding-left: 1rem;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .day-night-button {
+        width: 60px;
+        height: 28.18px;
+        background-image: url("./assets/images/day-mode-switch.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mobile-menu-button {
+        width: fit-content;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        transition: 600ms;
+    }
+    .mobile-menu-button:hover {
+        color: #F0F1F2;
+        background-color: black;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+    }
+    .desktop-menu-button {
+        display: none;
+    }
+    .header-wrapper {
+        width: 100vw;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.75rem;
+        line-height: 4rem;
+        color: black;
+    }
+    .illustration {
+        width: 4.5rem;
+        margin-bottom: 1rem;
+    }
+}
+/* mobile screen */
+@media screen and (max-width: 575px) {
+    .navigation-bar {
+        width: 100vw;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .day-night-button {
+        width: 60px;
+        height: 28.18px;
+        background-image: url("./assets/images/day-mode-switch.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mobile-menu-button {
+        width: fit-content;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        transition: 600ms;
+    }
+    .mobile-menu-button:hover {
+        color: #F0F1F2;
+        background-color: black;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+    }
+    .desktop-menu-button {
+        display: none;
+    }
+    .header-wrapper {
+        width: 100vw;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.75rem;
+        line-height: 4rem;
+        color: black;
+    }
+    .illustration {
+        width: 4.5rem;
+        margin-bottom: 1rem;
+    }
+}
