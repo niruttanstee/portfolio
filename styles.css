@@ -214,7 +214,9 @@ border-radius: 5px;
     .navigation-bar {
         padding-top: 1.5rem;
         margin: 0;
-        padding-left: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
     }
     .navigation-wrapper {
         width: 100vw;
