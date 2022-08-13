@@ -31,6 +31,9 @@ a {
     font-weight: 400;
     font-size: 1rem;
 }
+span {
+    margin-right: 0.5rem;
+}
 /* Firefox scrollbar */
 html {
     scrollbar-color: #0744F5 transparent;
@@ -49,6 +52,7 @@ border-radius: 5px;
 }
 /* large desktop screen */
 @media screen and (min-width: 1200px) {
+    /* navigation section */
     .navigation-bar {
         width: 100vw;
         padding-top: 2rem;
@@ -114,7 +118,8 @@ border-radius: 5px;
 }
 /* desktop screen */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .navigation-bar {
+        /* navigation section */
+        .navigation-bar {
         width: 100vw;
         padding-top: 2rem;
         padding-right: 2rem;
@@ -177,6 +182,7 @@ border-radius: 5px;
 }
 /* tablet screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* navigation section */
     .navigation-bar {
         width: 100vw;
         padding-top: 2rem;
@@ -224,6 +230,7 @@ border-radius: 5px;
 }
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    /* navigation section */
     .navigation-bar {
         padding-top: 1.5rem;
         margin: 0;
@@ -268,17 +275,17 @@ border-radius: 5px;
 }
 /* mobile screen */
 @media screen and (max-width: 575px) {
+    /* navigation section */
     .navigation-bar {
         width: 100vw;
         padding-top: 1rem;
-        padding-right: 2rem;
         margin: 0;
     }
     .navigation-wrapper {
         width: 100vw;
         margin: 0;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
     }
     a {
         text-decoration: none;
@@ -312,4 +319,28 @@ border-radius: 5px;
     .desktop-menu-button {
         display: none;
     }
+    /* header section */
+    .header-wrapper {
+        margin-top: 10rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .illustration-wrapper {
+        width: 6rem;
+    }
+    .illustration {
+        width: 4.5rem;
+    }
+    .mobile-title-wrapper {
+        width:fit-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.5rem;
+        line-height: 3.75rem;
+        color: black;
+    }
+}
+#end-letter {
+    margin-right: 0;
 }
