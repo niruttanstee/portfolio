@@ -106,19 +106,10 @@ border-radius: 5px;
         margin-left: 1.25rem;
         border-radius: 1rem;
     }
-    .header-wrapper {
-        width: 100vw;
-        padding-top: 11.25rem;
-        padding-right: 6rem;
-        padding-bottom: 11.25rem;
-        padding-left: 6rem;
-    }
-    .mobile-title-header {
-        display:none;
-    }
     /* header section */
     .header-wrapper {
-        margin-top: 10rem;
+        margin-top: 18rem;
+        margin-bottom: 18rem;
         padding-right: 12rem;
         padding-left: 12rem;
     }
@@ -136,6 +127,62 @@ border-radius: 5px;
         font-size: 6rem;
         line-height: 6rem;
         color: black;
+    }
+    /* project section */
+    .project-wrapper {
+        margin-top: -0.5rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .main-project-wrapper {
+        background-color: #101010;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        color: #F0F1F2;
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-year-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;    
+    }
+    .project-description-text {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-discipline-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
     }
 }
 /* large desktop screen */
@@ -193,19 +240,10 @@ border-radius: 5px;
         margin-left: 1.25rem;
         border-radius: 1rem;
     }
-    .header-wrapper {
-        width: 100vw;
-        padding-top: 11.25rem;
-        padding-right: 6rem;
-        padding-bottom: 11.25rem;
-        padding-left: 6rem;
-    }
-    .mobile-title-header {
-        display:none;
-    }
     /* header section */
     .header-wrapper {
-        margin-top: 9rem;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
         padding-right: 9rem;
         padding-left: 9rem;
     }
@@ -223,6 +261,62 @@ border-radius: 5px;
         font-size: 5.5rem;
         line-height: 5.5rem;
         color: black;
+    }
+    /* project section */
+    .project-wrapper {
+        margin-top: -4rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .main-project-wrapper {
+        background-color: #101010;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        color: #F0F1F2;
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-year-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;    
+    }
+    .project-description-text {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-discipline-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
     }
 }
 /* desktop screen */
@@ -285,9 +379,6 @@ border-radius: 5px;
         padding-bottom: 11.25rem;
         padding-left: 6rem;
     }
-    .mobile-title-header {
-        display:none;
-    }
     /* header section */
     .header-wrapper {
         margin-top: 8rem;
@@ -308,6 +399,61 @@ border-radius: 5px;
         font-size: 4.5rem;
         line-height: 5rem;
         color: black;
+    }
+    /* project section */
+    .project-wrapper {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .main-project-wrapper {
+        background-color: #101010;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        color: #F0F1F2;
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-year-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;    
+    }
+    .project-description-text {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-discipline-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
     }
 }
 /* tablet screen */
@@ -360,6 +506,7 @@ border-radius: 5px;
     /* header section */
     .header-wrapper {
         margin-top: 15rem;
+        margin-bottom: 15rem;
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -378,6 +525,63 @@ border-radius: 5px;
         line-height: 4rem;
         color: black;
     }
+    /* project section */
+    .project-wrapper {
+        margin-top: -4rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .main-project-wrapper {
+        background-color: #101010;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        color: #F0F1F2;
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-year-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;    
+    }
+    .project-description-text {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-discipline-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
 }
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -425,7 +629,8 @@ border-radius: 5px;
     }
     /* header section */
     .header-wrapper {
-        margin-top: 10rem;
+        margin-top: 12rem;
+        margin-bottom: 12rem;
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -443,6 +648,61 @@ border-radius: 5px;
         font-size: 3.5rem;
         line-height: 3.75rem;
         color: black;
+    }
+    /* project section */
+    .project-wrapper {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .main-project-wrapper {
+        background-color: #101010;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        color: #F0F1F2;
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-year-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;    
+    }
+    .project-description-text {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-discipline-label {
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
     }
 }
 /* mobile screen */
@@ -494,6 +754,7 @@ border-radius: 5px;
     /* header section */
     .header-wrapper {
         margin-top: 10rem;
+        margin-bottom: 10rem;
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -514,7 +775,6 @@ border-radius: 5px;
     }
     /* project section */
     .project-wrapper {
-        margin-top: 8rem;
         padding-right: 1rem;
         padding-left: 1rem;
     }
