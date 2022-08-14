@@ -181,6 +181,53 @@ border-radius: 5px;
         margin-bottom: 0.5rem;
         border-radius: 0.5rem;
     }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 12rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .about-header {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3rem;
+        line-height: 3.25rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .knowledge-descriptor {
+        font-family: "nirutt-standard-font", sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    .knowledge-label {
+        background-color: black;
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 /* large desktop screen */
 @media screen and (min-width: 1200px) and (max-width:1399px) {
@@ -316,6 +363,53 @@ border-radius: 5px;
         padding-left: 1rem;
         margin-bottom: 0.5rem;
         border-radius: 0.5rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 10rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .about-header {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3rem;
+        line-height: 3.25rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .knowledge-descriptor {
+        font-family: "nirutt-standard-font", sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    .knowledge-label {
+        background-color: black;
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 /* desktop screen */
@@ -456,6 +550,53 @@ border-radius: 5px;
         margin-bottom: 0.5rem;
         border-radius: 0.5rem;
     }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 9rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .about-header {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .knowledge-descriptor {
+        font-family: "nirutt-standard-font", sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    .knowledge-label {
+        background-color: black;
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 /* tablet screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -577,7 +718,53 @@ border-radius: 5px;
         margin-bottom: 0.5rem;
         border-radius: 0.5rem;
     }
-    
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .about-header {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .knowledge-descriptor {
+        font-family: "nirutt-standard-font", sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    .knowledge-label {
+        background-color: black;
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -696,6 +883,53 @@ border-radius: 5px;
         margin-bottom: 0.5rem;
         border-radius: 0.5rem;
     }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .about-header {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .knowledge-descriptor {
+        font-family: "nirutt-standard-font", sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    .knowledge-label {
+        background-color: black;
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 /* mobile screen */
 @media screen and (max-width: 575px) {
@@ -770,13 +1004,11 @@ border-radius: 5px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    /* new snippet */
     .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white{
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
     }
-    /* new snippet */
     .project-header-icon-wrapper {
         width: fit-content;
         padding-right: 0;
@@ -818,7 +1050,57 @@ border-radius: 5px;
         margin-bottom: 0.5rem;
         border-radius: 0.5rem;
     }
+    .project-link-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
 
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 6rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .about-header {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .knowledge-descriptor {
+        font-family: "nirutt-standard-font", sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    .knowledge-label {
+        background-color: black;
+        color: #F0F1F2;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; 
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 #end-letter {
     margin-right: 0;
