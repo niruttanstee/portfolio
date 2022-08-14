@@ -135,7 +135,7 @@ border-radius: 5px;
         padding-right: 12rem;
         padding-left: 12rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue {
+    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 3rem;
@@ -271,7 +271,7 @@ border-radius: 5px;
         padding-right: 9rem;
         padding-left: 9rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue {
+    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2.75rem;
@@ -410,7 +410,7 @@ border-radius: 5px;
         padding-right: 6rem;
         padding-left: 6rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue {
+    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2.75rem;
@@ -531,7 +531,7 @@ border-radius: 5px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue {
+    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2rem;
@@ -650,7 +650,7 @@ border-radius: 5px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue {
+    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
@@ -771,7 +771,7 @@ border-radius: 5px;
         padding-left: 1rem;
     }
     /* new snippet */
-    .project-bg-dark, .project-bg-green, .project-bg-blue {
+    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white{
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
@@ -831,4 +831,7 @@ border-radius: 5px;
 }
 .project-bg-blue {
     background-color: #B9E7F8;
+}
+.project-bg-white {
+    background-color: #fff;
 }
