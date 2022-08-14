@@ -228,6 +228,23 @@ border-radius: 5px;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
     }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 18rem;
+        margin-bottom: 18rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .contact-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 4.25rem;
+        line-height: 4.5rem;
+        color: black;
+    }
 }
 /* large desktop screen */
 @media screen and (min-width: 1200px) and (max-width:1399px) {
@@ -410,6 +427,23 @@ border-radius: 5px;
         padding-left: 1rem;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
+    }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .contact-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.75rem;
+        line-height: 4rem;
+        color: black;
     }
 }
 /* desktop screen */
@@ -597,6 +631,23 @@ border-radius: 5px;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
     }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .contact-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.25rem;
+        line-height: 3.5rem;
+        color: black;
+    }
 }
 /* tablet screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -765,6 +816,50 @@ border-radius: 5px;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
     }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3rem;
+        line-height: 3.25rem;
+        color: black;
+    }
+    .contact-buttons-wrapper {
+        margin-top: 4rem;
+        padding-left: 0.75rem;
+    }
+    .contact-button {
+        width: fit-content;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        transition: 600ms;
+        margin-right: 1.5rem;
+        border-style: solid;
+        border-width: 0.25rem;
+        border-color: #EBECEF;
+    }
+    .contact-button:hover {
+        color: #F0F1F2;
+        background-color: black;
+        padding-top: 0.8rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        margin-right: 1.5rem;
+    }
 }
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -929,6 +1024,24 @@ border-radius: 5px;
         padding-left: 1rem;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
+    }    
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+        margin-right: 1rem;
+    }
+    .contact-wrapper {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        color: black;
     }
 }
 /* mobile screen */
@@ -1101,8 +1214,25 @@ border-radius: 5px;
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
     }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        color: black;
+    }
 }
-#end-letter {
+#end-letter-header, #end-letter-contact {
     margin-right: 0;
 }
 .project-bg-dark {
@@ -1116,4 +1246,38 @@ border-radius: 5px;
 }
 .project-bg-white {
     background-color: #fff;
+}
+.contact-buttons-wrapper {
+    margin-top: 4rem;
+    padding-left: 0.75rem;
+}
+/* global contact buttons */
+.contact-buttons-wrapper {
+    margin-top: 4rem;
+    padding-left: 0.75rem;
+}
+.contact-button {
+    font-family: "nirutt-standard-font", sans-serif;
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    transition: 600ms;
+    margin-right: 1.5rem;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-color: #EBECEF;
+}
+.contact-button:hover {
+    font-family: "nirutt-standard-font", sans-serif;
+    color: #F0F1F2;
+    background-color: black;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
 }
