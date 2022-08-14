@@ -25,7 +25,7 @@
 }
 body {
     background-color: #F0F1F2;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 span {
     margin-right: 0.5rem;
@@ -245,6 +245,15 @@ border-radius: 5px;
         line-height: 4.5rem;
         color: black;
     }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 11.25rem;
+        padding-left: 11.25rem;
+    }
+    .contact-button, .contact-button:hover {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 /* large desktop screen */
 @media screen and (min-width: 1200px) and (max-width:1399px) {
@@ -444,6 +453,15 @@ border-radius: 5px;
         font-size: 3.75rem;
         line-height: 4rem;
         color: black;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 8.25rem;
+        padding-left: 8.25rem;
+    }
+    .contact-button, .contact-button:hover {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 /* desktop screen */
@@ -647,6 +665,15 @@ border-radius: 5px;
         font-size: 3.25rem;
         line-height: 3.5rem;
         color: black;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 5.25rem;
+        padding-left: 5.25rem;
+    }
+    .contact-button, .contact-button:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
 }
 /* tablet screen */
@@ -860,6 +887,15 @@ border-radius: 5px;
         border-radius: 1rem;
         margin-right: 1.5rem;
     }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+    }
+    .contact-button, .contact-button:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -1043,6 +1079,16 @@ border-radius: 5px;
         line-height: 2.75rem;
         color: black;
     }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .contact-button, .contact-button:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
 }
 /* mobile screen */
 @media screen and (max-width: 575px) {
@@ -1231,6 +1277,24 @@ border-radius: 5px;
         line-height: 2.75rem;
         color: black;
     }
+    .contact-button {
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact-button:hover {
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+        margin: 0;
+    }
+    .contact-button, .contact-button:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 #end-letter-header, #end-letter-contact {
     margin-right: 0;
@@ -1257,6 +1321,8 @@ border-radius: 5px;
     padding-left: 0.75rem;
 }
 .contact-button {
+    color:black;
+    border-color: #EBECEF;
     font-family: "nirutt-standard-font", sans-serif;
     width: fit-content;
     padding-top: 0.8rem;
@@ -1265,11 +1331,8 @@ border-radius: 5px;
     padding-left: 1.5rem;
     border-radius: 1rem;
     transition: 600ms;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
     border-style: solid;
     border-width: 0.25rem;
-    border-color: #EBECEF;
 }
 .contact-button:hover {
     font-family: "nirutt-standard-font", sans-serif;
@@ -1280,10 +1343,13 @@ border-radius: 5px;
     padding-bottom: 0.8rem;
     padding-left: 1.5rem;
     border-radius: 1rem;
-    margin-right: 1.5rem;
 }
 #letter-gradient {
     background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.copyright-text, .website-text {
+    font-family: "nirutt-header-font", sans-serif;
+    color: black;
 }
