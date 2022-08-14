@@ -135,8 +135,7 @@ border-radius: 5px;
         padding-right: 12rem;
         padding-left: 12rem;
     }
-    .project {
-        background-color: #101010;
+    .project-bg-dark, .project-bg-green, .project-bg-blue {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 3rem;
@@ -149,7 +148,6 @@ border-radius: 5px;
         width: 1.75rem;
     }
     .project-header-title {
-        color: #F0F1F2;
         margin-bottom: 0;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 700;
@@ -159,13 +157,11 @@ border-radius: 5px;
         margin-top: 0.25rem;
     }
     .project-year-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 600;
         font-size: 1rem;    
     }
     .project-description-text {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 400;
         font-size: 1rem;  
@@ -174,11 +170,10 @@ border-radius: 5px;
         margin-top: 2.5rem;
     }
     .project-discipline-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.05);
         padding-top: 0.5rem;
         padding-right: 1rem;
         padding-bottom: 0.5rem;
@@ -276,8 +271,7 @@ border-radius: 5px;
         padding-right: 9rem;
         padding-left: 9rem;
     }
-    .project {
-        background-color: #101010;
+    .project-bg-dark, .project-bg-green, .project-bg-blue {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2.75rem;
@@ -290,7 +284,6 @@ border-radius: 5px;
         width: 1.75rem;
     }
     .project-header-title {
-        color: #F0F1F2;
         margin-bottom: 0;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 700;
@@ -300,13 +293,11 @@ border-radius: 5px;
         margin-top: 0.25rem;
     }
     .project-year-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 600;
         font-size: 1rem;    
     }
     .project-description-text {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 400;
         font-size: 1rem;  
@@ -315,11 +306,10 @@ border-radius: 5px;
         margin-top: 2.5rem;
     }
     .project-discipline-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.05);
         padding-top: 0.5rem;
         padding-right: 1rem;
         padding-bottom: 0.5rem;
@@ -332,10 +322,10 @@ border-radius: 5px;
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     /* navigation section */
     .navigation-bar {
-    width: 100vw;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    margin: 0;
+        width: 100vw;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        margin: 0;
     }
     .navigation-wrapper {
         width: 100vw;
@@ -420,8 +410,7 @@ border-radius: 5px;
         padding-right: 6rem;
         padding-left: 6rem;
     }
-    .project {
-        background-color: #101010;
+    .project-bg-dark, .project-bg-green, .project-bg-blue {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2.75rem;
@@ -434,7 +423,6 @@ border-radius: 5px;
         width: 1.75rem;
     }
     .project-header-title {
-        color: #F0F1F2;
         margin-bottom: 0;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 700;
@@ -444,13 +432,11 @@ border-radius: 5px;
         margin-top: 0.25rem;
     }
     .project-year-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 600;
         font-size: 1rem;    
     }
     .project-description-text {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 400;
         font-size: 1rem;  
@@ -459,11 +445,10 @@ border-radius: 5px;
         margin-top: 2.5rem;
     }
     .project-discipline-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.05);
         padding-top: 0.5rem;
         padding-right: 1rem;
         padding-bottom: 0.5rem;
@@ -546,8 +531,7 @@ border-radius: 5px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project {
-        background-color: #101010;
+    .project-bg-dark, .project-bg-green, .project-bg-blue {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2rem;
@@ -560,7 +544,6 @@ border-radius: 5px;
         width: 1.75rem;
     }
     .project-header-title {
-        color: #F0F1F2;
         margin-bottom: 0;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 700;
@@ -570,13 +553,11 @@ border-radius: 5px;
         margin-top: 0.25rem;
     }
     .project-year-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 600;
         font-size: 1rem;    
     }
     .project-description-text {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 400;
         font-size: 1rem;  
@@ -585,11 +566,10 @@ border-radius: 5px;
         margin-top: 2.5rem;
     }
     .project-discipline-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.05);
         padding-top: 0.5rem;
         padding-right: 1rem;
         padding-bottom: 0.5rem;
@@ -670,11 +650,10 @@ border-radius: 5px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project {
-        background-color: #101010;
+    .project-bg-dark, .project-bg-green, .project-bg-blue {
         border-radius: 1.75rem;
         padding: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .project-header-icon-wrapper {
         width: fit-content;
@@ -684,7 +663,6 @@ border-radius: 5px;
         width: 1.75rem;
     }
     .project-header-title {
-        color: #F0F1F2;
         margin-bottom: 0;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 700;
@@ -694,13 +672,11 @@ border-radius: 5px;
         margin-top: 0.25rem;
     }
     .project-year-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 600;
         font-size: 1rem;    
     }
     .project-description-text {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 400;
         font-size: 1rem;  
@@ -709,11 +685,10 @@ border-radius: 5px;
         margin-top: 2.5rem;
     }
     .project-discipline-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.05);
         padding-top: 0.5rem;
         padding-right: 1rem;
         padding-bottom: 0.5rem;
@@ -795,12 +770,13 @@ border-radius: 5px;
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project {
-        background-color: #101010;
+    /* new snippet */
+    .project-bg-dark, .project-bg-green, .project-bg-blue {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
     }
+    /* new snippet */
     .project-header-icon-wrapper {
         width: fit-content;
         padding-right: 0;
@@ -809,7 +785,6 @@ border-radius: 5px;
         width: 1.75rem;
     }
     .project-header-title {
-        color: #F0F1F2;
         margin-bottom: 0;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 700;
@@ -819,13 +794,11 @@ border-radius: 5px;
         margin-top: 0.25rem;
     }
     .project-year-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 600;
         font-size: 1rem;    
     }
     .project-description-text {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 400;
         font-size: 1rem;  
@@ -834,11 +807,10 @@ border-radius: 5px;
         margin-top: 2.5rem;
     }
     .project-discipline-label {
-        color: #F0F1F2;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.05);
         padding-top: 0.5rem;
         padding-right: 1rem;
         padding-bottom: 0.5rem;
@@ -850,4 +822,13 @@ border-radius: 5px;
 }
 #end-letter {
     margin-right: 0;
+}
+.project-bg-dark {
+    background-color: #101010;
+}
+.project-bg-green {
+    background-color: #B4F3D1;
+}
+.project-bg-blue {
+    background-color: #B9E7F8;
 }
