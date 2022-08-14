@@ -216,8 +216,8 @@ border-radius: 5px;
         margin-top: 2rem;
     }
     .knowledge-label {
-        background-color: black;
-        color: #F0F1F2;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: black;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
@@ -416,8 +416,8 @@ border-radius: 5px;
         margin-top: 2rem;
     }
     .knowledge-label {
-        background-color: black;
-        color: #F0F1F2;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: black;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
@@ -619,8 +619,8 @@ border-radius: 5px;
         margin-top: 2rem;
     }
     .knowledge-label {
-        background-color: black;
-        color: #F0F1F2;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: black;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
@@ -1013,8 +1013,8 @@ border-radius: 5px;
         margin-top: 2rem;
     }
     .knowledge-label {
-        background-color: black;
-        color: #F0F1F2;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: black;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
@@ -1202,8 +1202,8 @@ border-radius: 5px;
         margin-top: 2rem;
     }
     .knowledge-label {
-        background-color: black;
-        color: #F0F1F2;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: black;
         font-family: "nirutt-standard-font", sans-serif;
         font-weight: 500;
         font-size: 1rem; 
@@ -1266,6 +1266,7 @@ border-radius: 5px;
     border-radius: 1rem;
     transition: 600ms;
     margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
     border-style: solid;
     border-width: 0.25rem;
     border-color: #EBECEF;
@@ -1280,4 +1281,9 @@ border-radius: 5px;
     padding-left: 1.5rem;
     border-radius: 1rem;
     margin-right: 1.5rem;
+}
+#letter-gradient {
+    background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
