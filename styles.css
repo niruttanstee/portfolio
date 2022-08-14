@@ -215,19 +215,6 @@ border-radius: 5px;
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
     }
-    .knowledge-label {
-        background-color: rgba(0, 0, 0, 0.05);
-        color: black;
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
     /* contact section 
     - mountain icon uses properties of class illustration */
     .contact-title-wrapper {
@@ -377,18 +364,6 @@ border-radius: 5px;
     }
     .project-discipline-wrapper {
         margin-top: 2.5rem;
-    }
-    .project-discipline-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.05);
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
     }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
@@ -590,18 +565,6 @@ border-radius: 5px;
     .project-discipline-wrapper {
         margin-top: 2.5rem;
     }
-    .project-discipline-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.05);
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -783,18 +746,6 @@ border-radius: 5px;
     }
     .project-discipline-wrapper {
         margin-top: 2.5rem;
-    }
-    .project-discipline-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.05);
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
     }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
@@ -1047,20 +998,7 @@ border-radius: 5px;
     }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
-    }
-    .knowledge-label {
-        background-color: rgba(0, 0, 0, 0.05);
-        color: black;
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
-    }    
+    }  
     /* contact section 
     - mountain icon uses properties of class illustration */
     .contact-title-wrapper {
@@ -1353,3 +1291,16 @@ border-radius: 5px;
     font-family: "nirutt-header-font", sans-serif;
     color: black;
 }
+.knowledge-label {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; 
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+} 
