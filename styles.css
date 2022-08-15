@@ -1305,6 +1305,7 @@ border-radius: 5px;
     margin-bottom: 0.5rem;
 } 
 .preloader {
+    background-color:#101010;
     position: fixed;
     height: 100%;
     width: 100%;
