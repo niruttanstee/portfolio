@@ -1305,16 +1305,18 @@ border-radius: 5px;
     margin-bottom: 0.5rem;
 } 
 .preloader {
-    background-color: #F0F1F2;
     position: fixed;
     height: 100%;
     width: 100%;
     z-index: 9999999;
     bottom: 0;
     top: 0;
-    animation: fadeOutPreloader 400ms linear 2s forwards;
+    animation: fadeOutPreloader 400ms linear 2.6s forwards;
 }
  @keyframes fadeOutPreloader {
     0% {opacity: 100%;}
-    100% {opacity: 0%;}
+    100% {
+        opacity: 0%;
+        visibility: hidden;
+    }
  }
