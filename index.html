@@ -14,7 +14,7 @@
             <div class="navigation-wrapper row">
                 <!--navigation logo-->
                 <div class="col align-self-center">
-                    <a class="nav-logo-wrapper" href="#">
+                    <a class="nav-logo-wrapper" onclick="scrollToTop()">
                         <picture>
                             <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo.svg">
                             <img src="./assets/logos/desktop-logo.svg" alt="Nirutt Anstee website logo">
@@ -33,15 +33,15 @@
                         <!--mobile menu-->
                         <a class="mobile-menu-button text-end text-wrap" onclick="">Menu</a>
                         <!--tablet/desktop menu-->
-                        <a class="desktop-menu-button text-end text-wrap text-center">Work</a>
-                        <a class="desktop-menu-button text-end text-wrap text-center">About</a>
-                        <a class="desktop-menu-button text-end text-wrap text-center">Contact</a>
+                        <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollWork()">Work</a>
+                        <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollAbout()">About</a>
+                        <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollContact()">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="preloader"></div>
-        <div class="main-content-wrapper overflow-hidden">
+        <div id="scroll-section-1" class="main-content-wrapper overflow-hidden">
             <!--header section-->
             <div class="header-wrapper container">
                 <div class="header-inner-wrapper row justify-content-start">
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <!--project section-->
-            <div class="project-section-wrapper container">
+            <div id="scroll-section-2" class="project-section-wrapper container">
                 <!--main project display-->
                 <a class="project-wrapper" href="#">
                     <div class="project-bg-dark">
@@ -260,7 +260,7 @@
                 </div>
             </div>
             <!--about section-->
-            <div class="about-wrapper container">
+            <div id="scroll-section-3" class="about-wrapper container">
                 <!--about header-->
                 <div class="about-header-wrapper overflow-hidden">
                     <span class="about-letter">Passionate</span>
@@ -324,7 +324,7 @@
             <!--contact section-->
             <div class="contact-wrapper container">
                 <!--contact header and icon-->
-                <div class="contact-header-wrapper row justify-content-start">
+                <div id="scroll-section-4" class="contact-header-wrapper row justify-content-start">
                     <!--title-->
                     <div class="contact-title-wrapper col-1 justify-content-start flex-wrap overflow-hidden">
                         <span class="contact-letter">I'm</span>
@@ -360,7 +360,12 @@
                         <p class="website-text col">Made by Nirutt Anstee</p>
                     </div>
                     <div class="copyright-wrapper col row justify-content-end">
-                        <p class="copyright-text text-end">© 2022</p>
+                        <p class="copyright-text text-end"></p>
+                        <script>
+                            let date = new Date;
+                            let copyright = document.getElementsByClassName("copyright-text");
+                            copyright[0].innerHTML = `© ${date.getFullYear()}`;
+                        </script>
                     </div>
                 </div>
             </footer>
@@ -370,8 +375,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script> <!--preloader-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
         <script src="./scripts/animation.js"></script>
-        <script src="./scripts/scrollTrigger.js"></script>
+        <script src="./scripts/functions.js"></script>
         </body>
 </html>

@@ -23,6 +23,9 @@
     src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
     font-weight: 700;
 }
+:root {
+    scroll-behavior: unset;
+}
 body {
     background-color:#000000;
 }
