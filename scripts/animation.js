@@ -32,7 +32,7 @@ gsap.to(mainWrapper[0], {
     borderRadius: 0,
     ease: "power1.out"
 })
-window.innerHeight = window.innerHeight * 2;
+window.innerHeight = window.innerHeight * 1.8;
 
 // Header (8 elements + 1 illustration[0] element)
 gsap.to(headElements[0], {
@@ -527,7 +527,7 @@ gsap.to(knowledgeLabel, {
 // Contact Section (11 elements + 1 illustration)
 gsap.to(contactElements[0], {
     scrollTrigger: contactElements[0],
-   delay: 0.0,
+    delay: 0,
     duration: 0.25,
     y: 0,
     opacity: 1,
