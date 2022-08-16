@@ -8,7 +8,36 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="align-self-start justify-content-center">
-        <!--preloader-->
+        <!--mobile menu-->
+        <div class="mobile-menu row align-items-end">
+            <!--mobile menu header nav -->
+            <div class="mobile-navigation-bar navbar fixed-top">
+                <div class="mobile-navigation-wrapper row">
+                    <!--navigation logo-->
+                    <div class="col align-self-center">
+                        <a class="nav-logo-wrapper" onclick="closeMobileMenu(), scrollToTop()">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo-light.svg">
+                                <img src="./assets/logos/desktop-logo-light.svg" alt="Nirutt Anstee website logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <!--menu-->
+                    <div class="col align-self-center">
+                        <div class="row justify-content-end">
+                            <!--mobile menu-->
+                            <a class="mobile-menu-button-white text-end text-wrap" onclick="closeMobileMenu()">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--mobile menu button-->
+            <div class="mobile-menu-button-wrapper d-flex flex-column">
+                <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollWork()">Work</a>
+                <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollAbout()">About</a>
+                <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollContact()">Contact</a>
+            </div>
+        </div>
         <!--navigation-->
         <div class="navigation-bar navbar-nav fixed-top">
             <div class="navigation-wrapper row">
@@ -31,7 +60,7 @@
                 <div class="col align-self-center">
                     <div class="row justify-content-end">
                         <!--mobile menu-->
-                        <a class="mobile-menu-button text-end text-wrap" onclick="">Menu</a>
+                        <a class="mobile-menu-button text-end text-wrap" onclick="openMobileMenu()">Menu</a>
                         <!--tablet/desktop menu-->
                         <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollWork()">Work</a>
                         <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollAbout()">About</a>

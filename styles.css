@@ -23,8 +23,9 @@
     src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
     font-weight: 700;
 }
-:root {
-    scroll-behavior: unset;
+/* Firefox scrollbar */
+html {
+    scrollbar-color: #0744F5 transparent;
 }
 body {
     background-color:#000000;
@@ -32,11 +33,6 @@ body {
 span {
     margin-right: 0.5rem;
 }
-/* Firefox scrollbar */
-html {
-    scrollbar-color: #0744F5 transparent;
-}
-  
 /* WebKit and Chromiums scrollbar */
 ::-webkit-scrollbar {
 width: 8px;
@@ -48,7 +44,6 @@ background-color: white;
 background: #0744F5;
 border-radius: 5px;
 }
-/* global variables */
 #end-letter-header, #end-letter-contact {
     margin-right: 0;
 }
@@ -120,7 +115,6 @@ border-radius: 5px;
 } 
 a {
     text-decoration: none;
-    color: black;
 }
 /* animation and transitions for preloader and default states */
 .preloader {
@@ -133,9 +127,97 @@ div.main-content-wrapper {
     border-radius: 5rem;
     padding-bottom: 2rem;
 }
+.mobile-menu {
+    background-color: #000000;
+    z-index: 2;
+    position: fixed;
+    height: 0%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    right: 0;
+    margin-right: 0;
+}
+.mobile-navigation-bar {
+    opacity: 0;
+    visibility: hidden;
+}
+.mobile-menu-button-wrapper {
+    opacity: 0;
+    visibility: hidden;
+}
 .navigation-bar {
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
+}
+.mobile-menu-button, .mobile-menu-button-white {
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    transition: 600ms;
+}
+.mobile-menu-button {
+    color: black;
+}
+.mobile-menu-button-white {
+    color: #F0F1F2;
+}
+.mobile-menu-button:hover {
+    color: #F0F1F2;
+    background-color: black;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+}
+.mobile-menu-button-white:hover {
+    color: #F0F1F2;
+    background-color: #222529;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+}
+.mobile-menu-button-lg {
+    color: #F0F1F2;
+    font-family: "nirutt-standard-font",sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.desktop-menu-button {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    margin-left: 2.5rem;
+    transition: 600ms;
+    color: #000000;
+}
+.desktop-menu-button:hover {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F0F1F2;
+    background-color: black;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
 }
 span.letter, .illustration, .about-letter, .contact-letter,
 .contact-buttons-wrapper {
@@ -152,6 +234,9 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
 /* extra large desktop screen */
 @media screen and (min-width: 1400px) {
     /* navigation section */
+    .mobile-menu {
+        display: none;
+    }
     .navigation-bar {
         width: 100vw;
         padding-top: 2rem;
@@ -177,34 +262,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .mobile-menu-button {
         display: none;
-    }
-    .desktop-menu-button {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        margin-right: 1.25rem;
-        margin-left: 1.25rem;
-        transition: 600ms;
-    }
-    .desktop-menu-button:hover {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        margin-right: 1.25rem;
-        margin-left: 1.25rem;
-        border-radius: 1rem;
     }
     /* header section */
     .header-wrapper {
@@ -344,6 +401,9 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
 /* large desktop screen */
 @media screen and (min-width: 1200px) and (max-width:1399px) {
     /* navigation section */
+    .mobile-menu {
+        display: none
+    };
     .navigation-bar {
         width: 100vw;
         padding-top: 2rem;
@@ -369,34 +429,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .mobile-menu-button {
         display: none;
-    }
-    .desktop-menu-button {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        margin-right: 1.25rem;
-        margin-left: 1.25rem;
-        transition: 600ms;
-    }
-    .desktop-menu-button:hover {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        margin-right: 1.25rem;
-        margin-left: 1.25rem;
-        border-radius: 1rem;
     }
     /* header section */
     .header-wrapper {
@@ -537,6 +569,9 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
 /* desktop screen */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     /* navigation section */
+    .mobile-menu {
+        display: none
+    };
     .navigation-bar {
         width: 100vw;
         padding-top: 2rem;
@@ -562,32 +597,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .mobile-menu-button {
         display: none;
-    }
-    .desktop-menu-button {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        margin-left: 2.5rem;
-        transition: 600ms;
-    }
-    .desktop-menu-button:hover {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        margin-left: 2.5rem;
-        border-radius: 1rem;
     }
     .header-wrapper {
         width: 100vw;
@@ -734,13 +743,17 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
 /* tablet screen */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /* navigation section */
-    .navigation-bar {
+    .mobile-menu-button-wrapper {
+        padding-right: 5.4rem;
+        padding-left: 5.4rem;
+    }
+    .navigation-bar, .mobile-navigation-bar{
         width: 100vw;
         padding-top: 2rem;
         padding-right: 2rem;
         margin: 0;
     }
-    .navigation-wrapper {
+    .navigation-wrapper, .mobile-navigation-wrapper {
         width: 100vw;
         margin: 0;
         padding-right: 2rem;
@@ -752,24 +765,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-image: url("./assets/images/day-mode-switch.svg");
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    .mobile-menu-button {
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        transition: 600ms;
-    }
-    .mobile-menu-button:hover {
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
     }
     .desktop-menu-button {
         display: none;
@@ -940,14 +935,20 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
     /* navigation section */
-    .navigation-bar {
+    .mobile-menu-button-wrapper {
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+    .navigation-bar, .mobile-navigation-bar {
         padding-top: 1.5rem;
         margin: 0;
     }
-    .navigation-wrapper {
+    .navigation-wrapper, .mobile-navigation-wrapper {
         width: 100vw;
         padding-left: 2rem;
         padding-right: 2rem;
+        margin-left: 0;
+        margin-right: 0;
     }
     .day-night-button {
         width: 60px;
@@ -955,24 +956,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-image: url("./assets/images/day-mode-switch.svg");
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    .mobile-menu-button {
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        transition: 600ms;
-    }
-    .mobile-menu-button:hover {
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
     }
     .desktop-menu-button {
         display: none;
@@ -1117,12 +1100,16 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
 /* mobile screen */
 @media screen and (max-width: 575px) {
     /* navigation section */
-    .navigation-bar {
+    .mobile-menu-button-wrapper {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .navigation-bar, .mobile-navigation-bar {
         width: 100vw;
         padding-top: 1rem;
         margin: 0;
     }
-    .navigation-wrapper {
+    .navigation-wrapper, .mobile-navigation-wrapper {
         width: 100vw;
         margin: 0;
         padding-right: 0.25rem;
@@ -1134,24 +1121,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-image: url("./assets/images/day-mode-switch.svg");
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    .mobile-menu-button {
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        transition: 600ms;
-    }
-    .mobile-menu-button:hover {
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
     }
     .desktop-menu-button {
         display: none;

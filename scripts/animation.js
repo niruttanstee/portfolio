@@ -100,7 +100,7 @@ gsap.to(illustration[0], {
 })
 // Project (5 elements)
 gsap.to(project[0], {
-    scrollTrigger: project[0],
+    delay: 1.45,
     duration: 0.25, 
     y: 0, 
     opacity: 1, 
