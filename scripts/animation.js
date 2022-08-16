@@ -15,21 +15,20 @@ let contactButton = document.getElementsByClassName("contact-buttons-wrapper");
 
 // Preloader
 gsap.to(preloader[0], {
-    delay: 0.2,
-    duration: 2,
+    duration: 1,
     height: 0,
     ease: "power1.out"
 })
 gsap.to(navBar, {
-    delay: 2.2,
-    duration: 2, 
+    delay: 1.2,
+    duration: 0.25, 
     opacity: 1,
     visibility: "visible",
     ease: "power1.out"
 })
 gsap.to(mainWrapper[0], {
-    delay: 2.2,
-    duration: 2, 
+    delay: 1,
+    duration: 0.25, 
     borderRadius: 0,
     ease: "power1.out"
 })
@@ -37,64 +36,64 @@ window.innerHeight = window.innerHeight * 2;
 
 // Header (8 elements + 1 illustration[0] element)
 gsap.to(headElements[0], {
-    delay: 2,
-    duration: 3, 
+    delay: 1,
+    duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
 })
 gsap.to(headElements[1], {
-    delay: 2.05,
-    duration: 3, 
+    delay: 1.05,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(headElements[2], {
-    delay: 2.1,
-    duration: 3, 
+    delay: 1.1,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(headElements[3], {
-    delay: 2.15,
-    duration: 3, 
+    delay: 1.15,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(headElements[4], {
-    delay: 2.2,
-    duration: 3, 
+    delay: 1.2,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(headElements[5], {
-    delay: 2.25,
-    duration: 3, 
+    delay: 1.25,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(headElements[6], {
-    delay: 2.3,
-    duration: 3, 
+    delay: 1.3,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(headElements[7], {
-    delay: 2.35,
-    duration: 3, 
+    delay: 1.35,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
 })
 gsap.to(illustration[0], {
-    delay: 2.4,
-    duration: 3, 
+    delay: 1.4,
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
@@ -102,14 +101,14 @@ gsap.to(illustration[0], {
 // Project (5 elements)
 gsap.to(project[0], {
     scrollTrigger: project[0],
-    duration: 1, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
 })
 gsap.to(project[1], {
     scrollTrigger: project[1],
-    duration: 1, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
@@ -117,14 +116,14 @@ gsap.to(project[1], {
 gsap.to(project[2], {
     scrollTrigger: project[2],
     delay: 0.25,
-    duration: 1, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
 })
 gsap.to(project[3], {
     scrollTrigger: project[3],
-    duration: 1, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
@@ -132,7 +131,7 @@ gsap.to(project[3], {
 gsap.to(project[4], {
     scrollTrigger: project[4],
     delay: 0.25,
-    duration: 1, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
@@ -516,7 +515,6 @@ gsap.to(aboutElements[41], {
     opacity: 1,
     ease: "power1.out"
 })
-
 gsap.to(knowledgeLabel, {
     scrollTrigger: aboutElements[0],
     delay: 0,
@@ -530,7 +528,7 @@ gsap.to(knowledgeLabel, {
 gsap.to(contactElements[0], {
     scrollTrigger: contactElements[0],
    delay: 0.0,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -539,7 +537,7 @@ gsap.to(contactElements[0], {
 gsap.to(contactElements[1], {
     scrollTrigger: contactElements[0],
     delay: 0.05,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -548,7 +546,7 @@ gsap.to(contactElements[1], {
 gsap.to(contactElements[2], {
     scrollTrigger: contactElements[0],
     delay: 0.1,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -557,7 +555,7 @@ gsap.to(contactElements[2], {
 gsap.to(contactElements[3], {
     scrollTrigger: contactElements[0],
     delay: 0.15000000000000002,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -566,7 +564,7 @@ gsap.to(contactElements[3], {
 gsap.to(contactElements[4], {
     scrollTrigger: contactElements[0],
     delay: 0.2,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -575,7 +573,7 @@ gsap.to(contactElements[4], {
 gsap.to(contactElements[5], {
     scrollTrigger: contactElements[0],
     delay: 0.25,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -584,7 +582,7 @@ gsap.to(contactElements[5], {
 gsap.to(contactElements[6], {
     scrollTrigger: contactElements[0],
     delay: 0.30000000000000004,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -593,7 +591,7 @@ gsap.to(contactElements[6], {
 gsap.to(contactElements[7], {
     scrollTrigger: contactElements[0],
     delay: 0.35000000000000003,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -602,7 +600,7 @@ gsap.to(contactElements[7], {
 gsap.to(contactElements[8], {
     scrollTrigger: contactElements[0],
     delay: 0.4,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -611,7 +609,7 @@ gsap.to(contactElements[8], {
 gsap.to(contactElements[9], {
     scrollTrigger: contactElements[0],
    delay: 0.45,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -620,7 +618,7 @@ gsap.to(contactElements[9], {
 gsap.to(contactElements[10], {
     scrollTrigger: contactElements[0],
     delay: 0.5,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -629,7 +627,7 @@ gsap.to(contactElements[10], {
 gsap.to(contactElements[11], {
     scrollTrigger: contactElements[0],
     delay: 0.55,
-    duration: 3,
+    duration: 0.25,
     y: 0,
     opacity: 1,
     ease: "power1.out"
@@ -637,7 +635,7 @@ gsap.to(contactElements[11], {
 gsap.to(illustration[1], {
     scrollTrigger: contactElements[0],
     delay: 0.6,
-    duration: 3, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
@@ -647,7 +645,7 @@ gsap.to(illustration[1], {
 gsap.to(contactButton[0], {
     scrollTrigger: contactElements[0],
     delay: 0.65,
-    duration: 3, 
+    duration: 0.25, 
     y: 0, 
     opacity: 1,  
     ease: "power1.out"
