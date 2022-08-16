@@ -24,8 +24,7 @@
     font-weight: 700;
 }
 body {
-    background-color: #F0F1F2;
-    padding-bottom: 1rem;
+    background-color:#000000;
 }
 span {
     margin-right: 0.5rem;
@@ -116,33 +115,35 @@ border-radius: 5px;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
 } 
-/* animation and transitions */
- /* preloader animation */
+a {
+    text-decoration: none;
+    color: black;
+}
+/* animation and transitions for preloader and default states */
 .preloader {
-    background-color:#101010;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: 9999999;
-    bottom: 0;
-    top: 0;
-    animation: fadeOutPreloader 400ms linear 2.6s forwards;
+    height: 100vh;
+    background-color: #000000;
+
 }
-@keyframes fadeOutPreloader {
-    0% {opacity: 100%;}
-    100% {opacity: 0%; visibility: hidden;}
+div.main-content-wrapper {
+    background-color: #F0F1F2;
+    border-radius: 5rem;
+    padding-bottom: 2rem;
 }
-/* animations default state */
-span.letter, .illustration, .about-letter, .contact-letter, 
-a.project-wrapper, .knowledge-label {
+.navigation-bar {
+    opacity: 0;
+    visibility: hidden;
+}
+span.letter, .illustration, .about-letter, .contact-letter,
+.contact-buttons-wrapper {
     display: inline-block;
-    opacity: 0%;
-    transform: translateY(100px);
-}
-.contact-button {
-    display: inline-block;
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(20px);
+}
+a.project-wrapper, .about-knowledge-labels-wrapper {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(25px);
 }
 
 /* extra large desktop screen */
@@ -159,10 +160,6 @@ a.project-wrapper, .knowledge-label {
         margin: 0;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-    a {
-        text-decoration: none;
-        color: black;
     }
     .day-night-wrapper {
         width: fit-content;
@@ -356,10 +353,6 @@ a.project-wrapper, .knowledge-label {
         padding-right: 2rem;
         padding-left: 2rem;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
     .day-night-wrapper {
         width: fit-content;
     }
@@ -552,10 +545,6 @@ a.project-wrapper, .knowledge-label {
         margin: 0;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-    a {
-        text-decoration: none;
-        color: black;
     }
     .day-night-wrapper {
         width: fit-content;
@@ -753,10 +742,6 @@ a.project-wrapper, .knowledge-label {
         margin: 0;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-    a {
-        text-decoration: none;
-        color: black;
     }
     .day-night-button {
         width: 60px;
@@ -961,10 +946,6 @@ a.project-wrapper, .knowledge-label {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
     .day-night-button {
         width: 60px;
         height: 28.18px;
@@ -1143,10 +1124,6 @@ a.project-wrapper, .knowledge-label {
         margin: 0;
         padding-right: 0.25rem;
         padding-left: 0.25rem;
-    }
-    a {
-        text-decoration: none;
-        color: black;
     }
     .day-night-button {
         width: 60px;
