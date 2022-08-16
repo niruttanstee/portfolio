@@ -189,8 +189,11 @@ div.main-content-wrapper {
 .mobile-menu-button-lg {
     color: #F0F1F2;
     font-family: "nirutt-standard-font",sans-serif;
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 1.5rem;
+}
+.mobile-menu-button-lg:hover {
+    color: #F0F1F2;
 }
 .desktop-menu-button {
     font-family: "nirutt-standard-font", sans-serif;
@@ -406,12 +409,12 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     };
     .navigation-bar {
         width: 100vw;
-        padding-top: 2rem;
         padding-right: 2rem;
         margin: 0;
     }
     .navigation-wrapper {
         width: 100vw;
+        padding-top: 2rem;
         margin: 0;
         padding-right: 2rem;
         padding-left: 2rem;
@@ -574,13 +577,13 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     };
     .navigation-bar {
         width: 100vw;
-        padding-top: 2rem;
         padding-right: 2rem;
-        margin: 0;
+        margin-top: 3rem;
     }
     .navigation-wrapper {
         width: 100vw;
-        margin: 0;
+        margin-left: 0rem;
+        padding-top: 2rem;
         padding-right: 2rem;
         padding-left: 2rem;
     }
