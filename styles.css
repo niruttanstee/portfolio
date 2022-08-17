@@ -800,7 +800,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .desktop-menu-button {
+    .desktop-menu-button, .desktop-menu-button-white {
         display: none;
     }
     /* header section */
@@ -968,7 +968,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .desktop-menu-button {
+    .desktop-menu-button, .desktop-menu-button-white {
         display: none;
     }
     /* header section */
@@ -1118,7 +1118,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .desktop-menu-button {
+    .desktop-menu-button, .desktop-menu-button-white {
         display: none;
     }
     /* header section */
