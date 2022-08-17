@@ -19,27 +19,30 @@ document.addEventListener('mousemove',
         outerCursor.style.top = y + "px";
     }
 )
+
 // When not hovering over any element
 function notHover() {
+    console.log("not hovering");
     // cursor content
     gsap.to(cursorContent, {
-        duration: 0.5,
+        duration: 0.25,
         opacity: 0,
         ease: "power1.out",
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.5,
+        duration: 0.25,
         opacity: 1,
         backgroundColor: "#0744F5",
         ease: "power1.out"
     })
 }
+
 // Hovering over buttons makes background disappear
 function buttonHover() {
     // cursor
     gsap.to(cursor, {
-        duration: 0.5,
+        duration: 0.25,
         backgroundColor: "transparent",
         ease: "power1.out"
     })
@@ -58,13 +61,13 @@ function projectHover() {
         ease: "power1.out"
     })
     gsap.to(cursorContent, {
-        duration: 0.5,
+        duration: 0.25,
         opacity: 1,
         ease: "power1.out"
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.5,
+        duration: 0.25,
         backgroundColor: "transparent",
         ease: "power1.out"
     })
@@ -83,13 +86,13 @@ function githubHover() {
         ease: "power1.out"
     })
     gsap.to(cursorContent, {
-        duration: 0.5,
+        duration: 0.25,
         opacity: 1,
         ease: "power1.out"
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.5,
+        duration: 0.25,
         backgroundColor: "transparent",
         ease: "power1.out"
     })
@@ -108,7 +111,7 @@ function aboutHover() {
             ease: "power1.out"
         })
         gsap.to(cursorContent, {
-            duration: 0.5,
+            duration: 0.25,
             opacity: 1,
             ease: "power1.out"
         })
@@ -126,13 +129,13 @@ function dayNightModeHover() {
         ease: "power1.out"
     })
     gsap.to(cursorContent, {
-        duration: 0.5,
+        duration: 0.25,
         opacity: 1,
         ease: "power1.out"
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.5,
+        duration: 0.25,
         backgroundColor: "transparent",
         ease: "power1.out"
     })
