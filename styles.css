@@ -59,6 +59,11 @@ border-radius: 5px;
 .project-bg-white {
     background-color: #fff;
 }
+#contact-gradient {
+    background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .contact-buttons-wrapper {
     margin-top: 4rem;
     padding-left: 0.75rem;
@@ -84,6 +89,7 @@ border-radius: 5px;
 .contact-button:hover {
     font-family: "nirutt-standard-font", sans-serif;
     color: #F0F1F2;
+    border-color: black;
     background-color: black;
     padding-top: 0.8rem;
     padding-right: 1.5rem;
@@ -91,14 +97,33 @@ border-radius: 5px;
     padding-left: 1.5rem;
     border-radius: 1rem;
 }
-#letter-gradient {
-    background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.contact-button-light {
+    color:#EBECEF;
+    border-color: #EBECEF;
+    font-family: "nirutt-standard-font", sans-serif;
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    transition: 600ms;
+    border-style: solid;
+    border-width: 0.25rem;
+}
+.contact-button-light:hover {
+    font-family: "nirutt-standard-font", sans-serif;
+    color: #F0F1F2;
+    border-color: #222529;
+    background-color: #222529;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
 }
 .copyright-text, .website-text {
     font-family: "nirutt-header-font", sans-serif;
-    color: black;
 }
 .knowledge-label {
     background-color: rgba(0, 0, 0, 0.05);
@@ -115,6 +140,21 @@ border-radius: 5px;
 } 
 a {
     text-decoration: none;
+}
+.project-discipline-wrapper {
+    margin-top: 2.5rem;
+}
+.project-discipline-label {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; 
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
 }
 /* animation and transitions for preloader and default states */
 .preloader {
@@ -153,7 +193,8 @@ div.main-content-wrapper {
     visibility: hidden;
     z-index: 1;
 }
-.mobile-menu-button, .mobile-menu-button-white {
+.mobile-menu-button, .mobile-menu-button-white, 
+.mb-menu-button-close {
     width: fit-content;
     padding-top: 0.8rem;
     padding-right: 1.5rem;
@@ -165,7 +206,7 @@ div.main-content-wrapper {
 .mobile-menu-button {
     color: black;
 }
-.mobile-menu-button-white {
+.mobile-menu-button-white, .mb-menu-button-close {
     color: #F0F1F2;
 }
 .mobile-menu-button:hover {
@@ -177,7 +218,7 @@ div.main-content-wrapper {
     padding-left: 1.5rem;
     border-radius: 1rem;
 }
-.mobile-menu-button-white:hover {
+.mobile-menu-button-white:hover, .mb-menu-button-close:hover {
     color: #F0F1F2;
     background-color: #222529;
     padding-top: 0.8rem;
@@ -195,7 +236,7 @@ div.main-content-wrapper {
 .mobile-menu-button-lg:hover {
     color: #F0F1F2;
 }
-.desktop-menu-button {
+.desktop-menu-button, .desktop-menu-button-white {
     font-family: "nirutt-standard-font", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -207,14 +248,11 @@ div.main-content-wrapper {
     border-radius: 1rem;
     margin-left: 2.5rem;
     transition: 600ms;
-    color: #000000;
 }
-.desktop-menu-button:hover {
+.desktop-menu-button:hover, .desktop-menu-button-white:hover {
     font-family: "nirutt-standard-font", sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    color: #F0F1F2;
-    background-color: black;
     padding-top: 0.8rem;
     padding-right: 1.5rem;
     padding-bottom: 0.8rem;
@@ -222,7 +260,21 @@ div.main-content-wrapper {
     margin-left: 2.5rem;
     border-radius: 1rem;
 }
-span.letter, .illustration, .about-letter, .contact-letter,
+.desktop-menu-button {
+    color: #000000;
+}
+.desktop-menu-button:hover {
+    color: #F0F1F2;
+    background-color: #000000;
+}
+.desktop-menu-button-white {
+    color: #F0F1F2;
+}
+.desktop-menu-button-white:hover {
+    color: #F0F1F2;
+    background-color: #222529;
+}
+span.letter, .illustration, .about-letter, .contact-letter, .contact-gradient,
 .contact-buttons-wrapper {
     display: inline-block;
     opacity: 0;
@@ -263,7 +315,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .mobile-menu-button {
+    .mobile-menu-button, .mobile-menu-button-white {
         display: none;
     }
     /* header section */
@@ -325,21 +377,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         font-weight: 400;
         font-size: 1rem;  
     }
-    .project-discipline-wrapper {
-        margin-top: 2.5rem;
-    }
-    .project-discipline-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.05);
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -385,18 +422,18 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 12rem;
         padding-left: 12rem;
     }
-    .contact-letter {
+    .contact-letter, .contact-gradient {
         font-family: "nirutt-header-font", sans-serif;
         font-size: 4.25rem;
         line-height: 4.5rem;
-        color: black;
     }
     /* footer section */
     .footer-wrapper {
         padding-right: 11.25rem;
         padding-left: 11.25rem;
     }
-    .contact-button, .contact-button:hover {
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
         margin-right: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -430,7 +467,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .mobile-menu-button {
+    .mobile-menu-button, .mobile-menu-button-white {
         display: none;
     }
     /* header section */
@@ -492,9 +529,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         font-weight: 400;
         font-size: 1rem;  
     }
-    .project-discipline-wrapper {
-        margin-top: 2.5rem;
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -553,18 +587,18 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 9rem;
         padding-left: 9rem;
     }
-    .contact-letter {
+    .contact-letter, .contact-gradient {
         font-family: "nirutt-header-font", sans-serif;
         font-size: 3.75rem;
         line-height: 4rem;
-        color: black;
     }
     /* footer section */
     .footer-wrapper {
         padding-right: 8.25rem;
         padding-left: 8.25rem;
     }
-    .contact-button, .contact-button:hover {
+    .contact-button, .contact-button-light,
+    .contact-button-light:hover {
         margin-right: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -598,7 +632,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .mobile-menu-button {
+    .mobile-menu-button, .mobile-menu-button-white {
         display: none;
     }
     .header-wrapper {
@@ -665,9 +699,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         font-weight: 400;
         font-size: 1rem;  
     }
-    .project-discipline-wrapper {
-        margin-top: 2.5rem;
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -727,18 +758,18 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 6rem;
         padding-left: 6rem;
     }
-    .contact-letter {
+    .contact-letter, .contact-gradient {
         font-family: "nirutt-header-font", sans-serif;
         font-size: 3.25rem;
         line-height: 3.5rem;
-        color: black;
     }
     /* footer section */
     .footer-wrapper {
         padding-right: 5.25rem;
         padding-left: 5.25rem;
     }
-    .contact-button, .contact-button:hover {
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
         margin-right: 1rem;
         margin-bottom: 1rem;
     }
@@ -892,45 +923,22 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .contact-letter {
+    .contact-letter, .contact-gradient {
         font-family: "nirutt-header-font", sans-serif;
         font-size: 3rem;
         line-height: 3.25rem;
-        color: black;
     }
     .contact-buttons-wrapper {
         margin-top: 4rem;
         padding-left: 0.75rem;
-    }
-    .contact-button {
-        width: fit-content;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        transition: 600ms;
-        margin-right: 1.5rem;
-        border-style: solid;
-        border-width: 0.25rem;
-        border-color: #EBECEF;
-    }
-    .contact-button:hover {
-        color: #F0F1F2;
-        background-color: black;
-        padding-top: 0.8rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.8rem;
-        padding-left: 1.5rem;
-        border-radius: 1rem;
-        margin-right: 1.5rem;
     }
     /* footer section */
     .footer-wrapper {
         padding-right: 0.25rem;
         padding-left: 0.25rem;
     }
-    .contact-button, .contact-button:hover {
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
         margin-right: 1rem;
         margin-bottom: 1rem;
     }
@@ -1021,21 +1029,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         font-weight: 400;
         font-size: 1rem;  
     }
-    .project-discipline-wrapper {
-        margin-top: 2.5rem;
-    }
-    .project-discipline-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.05);
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -1083,18 +1076,18 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .contact-letter {
+    .contact-letter, .contact-gradient {
         font-family: "nirutt-header-font", sans-serif;
         font-size: 2.5rem;
         line-height: 2.75rem;
-        color: black;
     }
     /* footer section */
     .footer-wrapper {
         padding-right: 0rem;
         padding-left: 0rem;
     }
-    .contact-button, .contact-button:hover {
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
         margin-right: 1rem;
         margin-bottom: 1rem;
     }
@@ -1186,21 +1179,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         font-weight: 400;
         font-size: 1rem;  
     }
-    .project-discipline-wrapper {
-        margin-top: 2.5rem;
-    }
-    .project-discipline-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        background-color: rgba(0, 0, 0, 0.05);
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-    }
     .project-link-wrapper {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -1264,11 +1242,10 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .contact-letter {
+    .contact-letter, .contact-gradient {
         font-family: "nirutt-header-font", sans-serif;
         font-size: 2.5rem;
         line-height: 2.75rem;
-        color: black;
     }
     .contact-button {
         margin-right: 0.5rem;

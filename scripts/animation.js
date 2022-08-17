@@ -10,6 +10,7 @@ let project = document.getElementsByClassName("project-wrapper");
 let aboutElements = document.getElementsByClassName('about-letter');
 let knowledgeLabel = document.getElementsByClassName("about-knowledge-labels-wrapper");
 let contactElements = document.getElementsByClassName('contact-letter');
+let contactGradient = document.getElementsByClassName('contact-gradient');
 let contactButton = document.getElementsByClassName("contact-buttons-wrapper");
 
 
@@ -516,7 +517,7 @@ gsap.to(aboutElements[41], {
     ease: "power1.out"
 })
 gsap.to(knowledgeLabel, {
-    scrollTrigger: aboutElements[0],
+    scrollTrigger: knowledgeLabel,
     delay: 0,
     duration: 0.25,
     y: 0,
@@ -561,7 +562,7 @@ gsap.to(contactElements[3], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[4], {
+gsap.to(contactGradient[0], {
     scrollTrigger: contactElements[0],
     delay: 0.2,
     duration: 0.25,
@@ -570,7 +571,7 @@ gsap.to(contactElements[4], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[5], {
+gsap.to(contactElements[4], {
     scrollTrigger: contactElements[0],
     delay: 0.25,
     duration: 0.25,
@@ -579,7 +580,7 @@ gsap.to(contactElements[5], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[6], {
+gsap.to(contactElements[5], {
     scrollTrigger: contactElements[0],
     delay: 0.30000000000000004,
     duration: 0.25,
@@ -588,7 +589,7 @@ gsap.to(contactElements[6], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[7], {
+gsap.to(contactElements[6], {
     scrollTrigger: contactElements[0],
     delay: 0.35000000000000003,
     duration: 0.25,
@@ -597,7 +598,7 @@ gsap.to(contactElements[7], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[8], {
+gsap.to(contactElements[7], {
     scrollTrigger: contactElements[0],
     delay: 0.4,
     duration: 0.25,
@@ -606,7 +607,7 @@ gsap.to(contactElements[8], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[9], {
+gsap.to(contactElements[8], {
     scrollTrigger: contactElements[0],
    delay: 0.45,
     duration: 0.25,
@@ -615,7 +616,7 @@ gsap.to(contactElements[9], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[10], {
+gsap.to(contactElements[9], {
     scrollTrigger: contactElements[0],
     delay: 0.5,
     duration: 0.25,
@@ -624,7 +625,7 @@ gsap.to(contactElements[10], {
     ease: "power1.out"
 })
 
-gsap.to(contactElements[11], {
+gsap.to(contactElements[10], {
     scrollTrigger: contactElements[0],
     delay: 0.55,
     duration: 0.25,

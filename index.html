@@ -26,7 +26,7 @@
                     <div class="col align-self-center">
                         <div class="row justify-content-end">
                             <!--mobile menu-->
-                            <a class="mobile-menu-button-white text-end text-wrap" onclick="closeMobileMenu()">Close</a>
+                            <a class="mb-menu-button-close text-end text-wrap" onclick="closeMobileMenu()">Close</a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 <!--navigation logo-->
                 <div class="col align-self-center">
                     <a class="nav-logo-wrapper" onclick="scrollToTop()">
-                        <picture>
+                        <picture class="day-night-wrapper" id="test">
                             <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo.svg">
                             <img src="./assets/logos/desktop-logo.svg" alt="Nirutt Anstee website logo">
                         </picture>
@@ -53,7 +53,7 @@
                 <!--day/night mode toggle button-->
                 <div class="day-night-wrapper col col-lg-1 align-self-center">
                     <div class="row justify-content-center">
-                        <a class="day-night-button" href="#" alt="Website dark mode button"></a>
+                        <a class="day-night-button" onclick="dayNightSwitch()" alt="Website dark mode button"></a>
                     </div>
                 </div>
                 <!--menu-->
@@ -283,7 +283,7 @@
                     </div>
                     <!--link to GitHub-->
                     <div class="project-link-wrapper row justify-content-center gx-0">
-                        <span class="project-link-descriptor col-1 text-black">To see all work, head over to my</span>
+                        <span class="project-link-descriptor col-1">To see all work, head over to my</span>
                         <a class="github-link col-1 text-decoration-underline" href="https://github.com/niruttanstee">GitHub page</a>
                     </div>
                 </div>
@@ -360,7 +360,7 @@
                         <span class="contact-letter">up</span>
                         <span class="contact-letter">for</span>
                         <span class="contact-letter">new</span>
-                        <span class="contact-letter" id="letter-gradient">adventures</span>
+                        <span class="contact-gradient" id="contact-gradient">adventures</span>
                         <br>
                         <span class="contact-letter">and</span>
                         <span class="contact-letter">I'd</span>
