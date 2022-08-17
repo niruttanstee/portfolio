@@ -36,14 +36,27 @@ span {
     margin-right: 0.5rem;
 }
 .cursor {
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #0744F5;
     background-color: #0744F5;
     position: fixed;
     pointer-events: none;
     z-index: 99999;
 }
+.cursor-outer {
+    width: fit-content;
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
+}
+.cursor-content {
+    width: fit-content;
+}
+
 /* Scrollbar and highlights */
 ::-webkit-scrollbar {
 width: 8px;
@@ -471,7 +484,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     /* navigation section */
     .mobile-menu {
         display: none
-    };
+    }
     .navigation-bar {
         width: 100vw;
         padding-right: 2rem;
@@ -600,7 +613,7 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     /* navigation section */
     .mobile-menu {
         display: none
-    };
+    }
     .navigation-bar {
         width: 100vw;
         padding-right: 2rem;

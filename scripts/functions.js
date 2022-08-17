@@ -101,7 +101,7 @@ function defaultDayNightState() {
     let hour = date.getHours();
     // if hours are between 8:00am and 18:00pm set day mode state,
     // otherwise set night mode state
-    if (hour > 7 && hour < 18) {
+    if (hour > 7 && hour < 19) {
         // set day mode
         if (status === 'day') {
             return;
