@@ -22,19 +22,20 @@ document.addEventListener('mousemove',
 
 // When not hovering over any element
 function notHover() {
-    console.log("not hovering");
     // cursor content
     gsap.to(cursorContent, {
-        duration: 0.25,
+        duration: 0,
         opacity: 0,
-        ease: "power1.out",
+    })
+    gsap.to(cursorContent, {
+        duration: 0,
+        src: "",
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.25,
+        duration: 0,
         opacity: 1,
         backgroundColor: "#0744F5",
-        ease: "power1.out"
     })
 }
 
@@ -42,9 +43,8 @@ function notHover() {
 function buttonHover() {
     // cursor
     gsap.to(cursor, {
-        duration: 0.25,
+        duration: 0,
         backgroundColor: "transparent",
-        ease: "power1.out"
     })
 }
  
@@ -61,15 +61,13 @@ function projectHover() {
         ease: "power1.out"
     })
     gsap.to(cursorContent, {
-        duration: 0.25,
+        duration: 0,
         opacity: 1,
-        ease: "power1.out"
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.25,
+        duration: 0,
         backgroundColor: "transparent",
-        ease: "power1.out"
     })
 }
 
@@ -83,38 +81,33 @@ function githubHover() {
         y: "-9.5px",
         width: "fit-content",
         src: "./assets/images/github-cursor.svg",
-        ease: "power1.out"
     })
     gsap.to(cursorContent, {
-        duration: 0.25,
+        duration: 0,
         opacity: 1,
-        ease: "power1.out"
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.25,
+        duration: 0,
         backgroundColor: "transparent",
-        ease: "power1.out"
     })
 }
 
 // Hovering over about wrapper
 function aboutHover() {
-        // cursor content
-        gsap.to(cursorContent, {
-            duration: 0,
-            opacity: 0,
-            width: "150px",
-            x: "45px",
-            y: "-80px",
-            src: "./assets/images/about-cursor.png",
-            ease: "power1.out"
-        })
-        gsap.to(cursorContent, {
-            duration: 0.25,
-            opacity: 1,
-            ease: "power1.out"
-        })
+    // cursor content
+    gsap.to(cursorContent, {
+        duration: 0,
+        opacity: 0,
+        width: "150px",
+        x: "45px",
+        y: "-80px",
+        src: "./assets/images/about-cursor.png",
+    })
+    gsap.to(cursorContent, {
+        duration: 0,
+        opacity: 1,
+    })
 }
 // Hovering over day/night button
 function dayNightModeHover() {
@@ -126,17 +119,14 @@ function dayNightModeHover() {
         y: "45px",
         width: "fit-content",
         src: "./assets/images/toggle-cursor.svg",
-        ease: "power1.out"
     })
     gsap.to(cursorContent, {
-        duration: 0.25,
+        duration: 0,
         opacity: 1,
-        ease: "power1.out"
     })
     // cursor
     gsap.to(cursor, {
-        duration: 0.25,
+        duration: 0,
         backgroundColor: "transparent",
-        ease: "power1.out"
     })
 }
