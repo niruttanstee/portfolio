@@ -1,4 +1,4 @@
-/* font imports */
+/* Font imports */
 @font-face {
     font-family: nirutt-header-font;
     src: url(./assets/fonts/NHaasGroteskDSPro-55Rg.otf);
@@ -23,7 +23,6 @@
     src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
     font-weight: 700;
 }
-/* Firefox scrollbar */
 html {
     scrollbar-color: #0744F5 transparent;
 }
@@ -33,16 +32,30 @@ body {
 span {
     margin-right: 0.5rem;
 }
-/* WebKit and Chromiums scrollbar */
+/* Scrollbar and highlights */
 ::-webkit-scrollbar {
 width: 8px;
 height: 8px;
 background-color: white;
 }
-
 ::-webkit-scrollbar-thumb {
 background: #0744F5;
 border-radius: 5px;
+}
+::selection {
+    background: #DFFC60;
+    color: #000000;
+}
+::-moz-selection {
+    background: #DFFC60;
+    color: #000000;
+}
+.day-night-button {
+    width: 60px;
+    height: 28.18px;
+    background-image: url("./assets/images/day-mode-switch.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 #end-letter-header, #end-letter-contact {
     margin-right: 0;
@@ -285,7 +298,34 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     opacity: 0;
     transform: translateY(25px);
 }
-
+.project-year-label {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;    
+}
+.project-description-text {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;  
+}
+.knowledge-descriptor {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+.knowledge-label {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; 
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 /* extra large desktop screen */
 @media screen and (min-width: 1400px) {
     /* navigation section */
@@ -306,14 +346,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .day-night-wrapper {
         width: fit-content;
-    }
-    .day-night-button {
-        width: 60px;
-        height: 28.18px;
-        background-image: url("./assets/images/day-mode-switch.svg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .mobile-menu-button, .mobile-menu-button-white {
         display: none;
@@ -367,16 +399,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .project-year-wrapper {
         margin-top: 0.25rem;
     }
-    .project-year-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;    
-    }
-    .project-description-text {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;  
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -402,11 +424,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .about-knowledge-descriptor-wrapper {
         margin-top: 3rem;
-    }
-    .knowledge-descriptor {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-size: 1rem;
-        color: black;
     }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
@@ -458,14 +475,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .day-night-wrapper {
         width: fit-content;
-    }
-    .day-night-button {
-        width: 60px;
-        height: 28.18px;
-        background-image: url("./assets/images/day-mode-switch.svg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .mobile-menu-button, .mobile-menu-button-white {
         display: none;
@@ -519,16 +528,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .project-year-wrapper {
         margin-top: 0.25rem;
     }
-    .project-year-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;    
-    }
-    .project-description-text {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;  
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -555,26 +554,8 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .about-knowledge-descriptor-wrapper {
         margin-top: 3rem;
     }
-    .knowledge-descriptor {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-size: 1rem;
-        color: black;
-    }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
-    }
-    .knowledge-label {
-        background-color: rgba(0, 0, 0, 0.05);
-        color: black;
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
     }
     /* contact section 
     - mountain icon uses properties of class illustration */
@@ -623,14 +604,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .day-night-wrapper {
         width: fit-content;
-    }
-    .day-night-button {
-        width: 60px;
-        height: 28.18px;
-        background-image: url("./assets/images/day-mode-switch.svg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .mobile-menu-button, .mobile-menu-button-white {
         display: none;
@@ -689,16 +662,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .project-year-wrapper {
         margin-top: 0.25rem;
     }
-    .project-year-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;    
-    }
-    .project-description-text {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;  
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -726,26 +689,8 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .about-knowledge-descriptor-wrapper {
         margin-top: 3rem;
     }
-    .knowledge-descriptor {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-size: 1rem;
-        color: black;
-    }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
-    }
-    .knowledge-label {
-        background-color: rgba(0, 0, 0, 0.05);
-        color: black;
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
     }
     /* contact section 
     - mountain icon uses properties of class illustration */
@@ -792,13 +737,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         margin: 0;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-    .day-night-button {
-        width: 60px;
-        height: 28.18px;
-        background-image: url("./assets/images/day-mode-switch.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .desktop-menu-button, .desktop-menu-button-white {
         display: none;
@@ -851,16 +789,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .project-year-wrapper {
         margin-top: 0.25rem;
     }
-    .project-year-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;    
-    }
-    .project-description-text {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;  
-    }
     .project-discipline-wrapper {
         margin-top: 2.5rem;
     }
@@ -891,26 +819,8 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .about-knowledge-descriptor-wrapper {
         margin-top: 3rem;
     }
-    .knowledge-descriptor {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-size: 1rem;
-        color: black;
-    }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
-    }
-    .knowledge-label {
-        background-color: black;
-        color: #F0F1F2;
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
     }
     /* contact section 
     - mountain icon uses properties of class illustration */
@@ -960,13 +870,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 2rem;
         margin-left: 0;
         margin-right: 0;
-    }
-    .day-night-button {
-        width: 60px;
-        height: 28.18px;
-        background-image: url("./assets/images/day-mode-switch.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .desktop-menu-button, .desktop-menu-button-white {
         display: none;
@@ -1019,16 +922,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .project-year-wrapper {
         margin-top: 0.25rem;
     }
-    .project-year-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;    
-    }
-    .project-description-text {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;  
-    }
     .project-link-descriptor {
         font-family: "nirutt-header-font", sans-serif;
         width: fit-content;
@@ -1055,11 +948,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .about-knowledge-descriptor-wrapper {
         margin-top: 3rem;
-    }
-    .knowledge-descriptor {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-size: 1rem;
-        color: black;
     }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
@@ -1110,13 +998,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         margin: 0;
         padding-right: 0.25rem;
         padding-left: 0.25rem;
-    }
-    .day-night-button {
-        width: 60px;
-        height: 28.18px;
-        background-image: url("./assets/images/day-mode-switch.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .desktop-menu-button, .desktop-menu-button-white {
         display: none;
@@ -1169,16 +1050,6 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .project-year-wrapper {
         margin-top: 0.25rem;
     }
-    .project-year-label {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;    
-    }
-    .project-description-text {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;  
-    }
     .project-link-wrapper {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -1210,27 +1081,10 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     .about-knowledge-descriptor-wrapper {
         margin-top: 3rem;
     }
-    .knowledge-descriptor {
-        font-family: "nirutt-standard-font", sans-serif;
-        font-size: 1rem;
-        color: black;
-    }
     .about-knowledge-labels-wrapper {
         margin-top: 2rem;
     }
-    .knowledge-label {
-        background-color: rgba(0, 0, 0, 0.05);
-        color: black;
-        font-family: "nirutt-standard-font", sans-serif;
-        font-weight: 500;
-        font-size: 1rem; 
-        padding-top: 0.5rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
+
     /* contact section 
     - mountain icon uses properties of class illustration */
     .contact-title-wrapper {
@@ -1247,11 +1101,8 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         font-size: 2.5rem;
         line-height: 2.75rem;
     }
-    .contact-button {
-        margin-right: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    .contact-button:hover {
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
         margin-right: 0.5rem;
         margin-bottom: 0.5rem;
     }

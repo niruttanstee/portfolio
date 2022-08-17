@@ -1,4 +1,18 @@
-// scroll to sections
+/*  function.js
+*   All functions for all sections of the website.
+*/
+
+// Credit
+const author = "Nirutt Anstee"
+const site = "nirutt.com"
+console.info("Made by " + author + "\n" + site);
+
+// Onload trigger event
+window.onload = (event) => {
+    defaultDayNightState();
+};
+
+// Scroll to certain sections of the page
 function scrollToTop() {
     let position = document.getElementById("scroll-section-1");
     window.scrollTo({top: position.offsetTop, behavior: 'smooth'});
@@ -16,7 +30,7 @@ function scrollContact() {
     window.scrollTo({top: position.offsetTop, behavior: 'smooth'});
 }
 
-// mobile menu section
+// Opens mobile menu
 function openMobileMenu() {
     let menu = document.getElementsByClassName("mobile-menu");
     let mobileNav = document.getElementsByClassName("mobile-navigation-bar");
@@ -47,6 +61,8 @@ function openMobileMenu() {
         ease: "power1.out"
     })
 }
+
+// Closes mobile menu
 function closeMobileMenu() {
     let menu = document.getElementsByClassName("mobile-menu");
     let mobileNav = document.getElementsByClassName("mobile-navigation-bar");
@@ -76,17 +92,13 @@ function closeMobileMenu() {
         ease: "power1.out"
     })
 }
-// onload 
-window.onload = (event) => {
-    defaultDayNightState();
-};
-// day mode and night mode (default time )
+
+// Triggers the day/night mode depending on the time
 function defaultDayNightState() {
     let contentDiv = document.getElementsByClassName("day-night-wrapper");
     let status = contentDiv[0].id;
     let date = new Date();
     let hour = date.getHours();
-    console.log("It's " + date);
     // if hours are between 8:00am and 18:00pm set day mode state,
     // otherwise set night mode state
     if (hour > 7 && hour < 18) {
@@ -104,6 +116,8 @@ function defaultDayNightState() {
     }
 }
 
+// Triggered by interaction with the day/night radio button, switches
+// between modes depending on the current state.
 function dayNightSwitch() {
     // check day-night wrapper id state and enable opposite
     let contentDiv = document.getElementsByClassName("day-night-wrapper");
@@ -117,6 +131,7 @@ function dayNightSwitch() {
     }
 }  
 
+// Enables day mode state.
 function enableDayMode(contentDiv) {
     // day-night wrapper set source srcset media and img src
     let button = document.getElementsByClassName("day-night-button"); 
@@ -142,23 +157,22 @@ function enableDayMode(contentDiv) {
     let copyrightText = document.getElementsByClassName("copyright-text");
     let desktopMenuButton = document.getElementsByClassName("desktop-menu-button-white");
 
-
-    // Menu Button
+    // mobile menu button
     mobileMenuButton[0].classList.replace("mobile-menu-button-white", "mobile-menu-button");
-    // Desktop menu button - Work
+    // desktop menu button - work
     desktopMenuButton[0].classList.replace("desktop-menu-button-white", "desktop-menu-button");
-    // Desktop menu button - About
+    // desktop menu button - about
     desktopMenuButton[0].classList.replace("desktop-menu-button-white", "desktop-menu-button");
-    // Desktop menu button - Contact
+    // desktop menu button - contact
     desktopMenuButton[0].classList.replace("desktop-menu-button-white", "desktop-menu-button");
-    // Email button
+    // email button
     contactButton[0].classList.replace("contact-button-light", "contact-button");
-    // LinkedIn button
+    // linkedIn button
     contactButton[0].classList.replace("contact-button-light", "contact-button");
-    // Github button
+    // github button
     contactButton[0].classList.replace("contact-button-light", "contact-button");
 
-    // gsap - set night mode
+    // gsap - set day mode
     // navigation section
     gsap.to(button[0], {
         duration: 1,
@@ -176,357 +190,299 @@ function enableDayMode(contentDiv) {
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[1], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[2], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[3], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[4], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[5], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[6], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(headerLetter[7], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     // projects section
     gsap.to(projectLinkDescriptor[0], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     // about section
     gsap.to(aboutLetter[0], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[1], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[2], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[3], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[4], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[5], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[6], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[7], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[8], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[9], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[10], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[11], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[12], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[13], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[14], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[15], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[16], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[17], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[18], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[19], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[20], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[21], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[22], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[23], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[24], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[25], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[26], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[27], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[28], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[29], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[30], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[31], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[32], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[33], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[34], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[35], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[36], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[37], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[38], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[39], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[40], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(aboutLetter[41], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeDescriptor[0], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[0], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[1], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[2], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[3], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[4], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[5], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#000",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[6], {
         duration: 1,
         color: "#F0F1F2",
@@ -540,61 +496,51 @@ function enableDayMode(contentDiv) {
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[1], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[2], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[3], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[4], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[5], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[6], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[7], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[8], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[9], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-
     gsap.to(contactLetter[10], {
         duration: 1,
         color: "#000",
@@ -612,11 +558,9 @@ function enableDayMode(contentDiv) {
         color: "#000",
         ease: "power1.out"
     })
-
-
-    console.log("Enabled day mode")
 }
 
+// Enables night mode state.
 function enableNightMode(contentDiv) {
     // day-night wrapper set source srcset media and img src 
     let button = document.getElementsByClassName("day-night-button");
@@ -627,7 +571,6 @@ function enableNightMode(contentDiv) {
     lastChild.setAttribute('src', './assets/logos/desktop-logo-light.svg');
     // set day-night wrapper id to night
     content.id = "night";
-
 
     // get elements
     let mainContentWrapper = document.getElementsByClassName("main-content-wrapper");
@@ -643,15 +586,13 @@ function enableNightMode(contentDiv) {
     let copyrightText = document.getElementsByClassName("copyright-text");
     let desktopMenuButton = document.getElementsByClassName("desktop-menu-button");
 
-
-
-    // Menu Button
+    // menu Button
     mobileMenuButton[0].classList.replace("mobile-menu-button", "mobile-menu-button-white");
-    // Desktop menu button - Work
+    // desktop menu button - Work
     desktopMenuButton[0].classList.replace("desktop-menu-button", "desktop-menu-button-white");
-    // Desktop menu button - About
+    // desktop menu button - About
     desktopMenuButton[0].classList.replace("desktop-menu-button", "desktop-menu-button-white");
-    // Desktop menu button - Contact
+    // desktop menu button - Contact
     desktopMenuButton[0].classList.replace("desktop-menu-button", "desktop-menu-button-white");
     // Email button
     contactButton[0].classList.replace("contact-button", "contact-button-light");
@@ -678,43 +619,36 @@ function enableNightMode(contentDiv) {
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(headerLetter[1], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(headerLetter[2], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })  
     gsap.to(headerLetter[3], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })   
     gsap.to(headerLetter[4], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })  
     gsap.to(headerLetter[5], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    }) 
     gsap.to(headerLetter[6], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })   
     gsap.to(headerLetter[7], {
         duration: 1,
         color: "#F0F1F2",
@@ -733,302 +667,253 @@ function enableNightMode(contentDiv) {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })   
     gsap.to(aboutLetter[1], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })   
     gsap.to(aboutLetter[2], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })   
     gsap.to(aboutLetter[3], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[4], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[5], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[6], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[7], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[8], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[9], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[10], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[11], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[12], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[13], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[14], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[15], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[16], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[17], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[18], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[19], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[20], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[21], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[22], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[23], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[24], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[25], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[26], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[27], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[28], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(aboutLetter[29], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[30], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[31], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[32], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[33], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[34], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[35], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[36], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[37], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[38], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[39], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[40], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
-    })
-    
+    })    
     gsap.to(aboutLetter[41], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeDescriptor[0], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-
     gsap.to(knowledgeLabel[0], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
         ease: "power1.out"
     })
-    
     gsap.to(knowledgeLabel[1], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
         ease: "power1.out"
     })
-    
     gsap.to(knowledgeLabel[2], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
         ease: "power1.out"
-    })
-    
+    })  
     gsap.to(knowledgeLabel[3], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
         ease: "power1.out"
     })
-    
     gsap.to(knowledgeLabel[4], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
         ease: "power1.out"
     })
-    
     gsap.to(knowledgeLabel[5], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
         ease: "power1.out"
     })
-    
     gsap.to(knowledgeLabel[6], {
         duration: 1,
         color: "#F0F1F2",
@@ -1042,61 +927,51 @@ function enableNightMode(contentDiv) {
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[1], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[2], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[3], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[4], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[5], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[6], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[7], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[8], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[9], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
-    
     gsap.to(contactLetter[10], {
         duration: 1,
         color: "#F0F1F2",
@@ -1114,8 +989,4 @@ function enableNightMode(contentDiv) {
         color: "#F0F1F2",
         ease: "power1.out"
     })
-
-    console.log("Enabled night mode")
 }
-
-// store state in local storage 
