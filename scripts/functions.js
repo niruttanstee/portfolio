@@ -157,6 +157,9 @@ function enableDayMode(contentDiv) {
     let copyrightText = document.getElementsByClassName("copyright-text");
     let desktopMenuButton = document.getElementsByClassName("desktop-menu-button-white");
 
+    // day/night radio button
+    button[0].style.backgroundImage = "url('./assets/images/day-mode-switch.svg')";
+
     // mobile menu button
     mobileMenuButton[0].classList.replace("mobile-menu-button-white", "mobile-menu-button");
     // desktop menu button - work
@@ -173,11 +176,6 @@ function enableDayMode(contentDiv) {
     contactButton[0].classList.replace("contact-button-light", "contact-button");
 
     // gsap - set day mode
-    // navigation section
-    gsap.to(button[0], {
-        duration: 1,
-        backgroundImage: "url('./assets/images/day-mode-switch.svg')",
-    })
     gsap.to(mainContentWrapper[0], {
         duration: 1,
         backgroundColor: "#F0F1F2",
@@ -586,6 +584,8 @@ function enableNightMode(contentDiv) {
     let copyrightText = document.getElementsByClassName("copyright-text");
     let desktopMenuButton = document.getElementsByClassName("desktop-menu-button");
 
+    // day/night radio button
+    button[0].style.backgroundImage = "url('./assets/images/night-mode-switch.svg')";
     // menu Button
     mobileMenuButton[0].classList.replace("mobile-menu-button", "mobile-menu-button-white");
     // desktop menu button - Work
@@ -602,11 +602,6 @@ function enableNightMode(contentDiv) {
     contactButton[0].classList.replace("contact-button", "contact-button-light");
 
     // gsap - set night mode
-    // navigation section
-    gsap.to(button[0], {
-        duration: 1,
-        backgroundImage: "url('./assets/images/night-mode-switch.svg')",
-    })
     gsap.to(mainContentWrapper[0], {
         duration: 1,
         backgroundColor: "#131313",

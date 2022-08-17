@@ -23,6 +23,9 @@
     src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
     font-weight: 700;
 }
+* {
+    cursor: none;
+}
 html {
     scrollbar-color: #0744F5 transparent;
 }
@@ -31,6 +34,15 @@ body {
 }
 span {
     margin-right: 0.5rem;
+}
+.cursor {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    background-color: #0744F5;
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
 }
 /* Scrollbar and highlights */
 ::-webkit-scrollbar {
@@ -294,7 +306,6 @@ span.letter, .illustration, .about-letter, .contact-letter, .contact-gradient,
     transform: translateY(20px);
 }
 a.project-wrapper, .about-knowledge-labels-wrapper {
-    display: inline-block;
     opacity: 0;
     transform: translateY(25px);
 }
