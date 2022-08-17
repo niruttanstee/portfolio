@@ -23,7 +23,7 @@ function scrollWork() {
 }
 function scrollAbout() {
     let position = document.getElementById("scroll-section-3");
-    window.scrollTo({top: position.offsetTop - 145, behavior: 'smooth'});
+    window.scrollTo({top: position.offsetTop - 120, behavior: 'smooth'});
 }
 function scrollContact() {
     let position = document.getElementById("scroll-section-4");

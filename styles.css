@@ -28,6 +28,12 @@
 }
 html {
     scrollbar-color: #0744F5 transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
 body {
     background-color:#000000;
@@ -39,22 +45,11 @@ span {
     width: 1rem;
     height: 1rem;
     border-radius: 100%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #0744F5;
-    background-color: transparent;
+    background-color: #F0F1F2;
     position: fixed;
     pointer-events: none;
     z-index: 99999;
-}
-.cursor-outer {
-    width: fit-content;
-    position: fixed;
-    pointer-events: none;
-    z-index: 99999;
-}
-.cursor-content {
-    width: fit-content;
+    mix-blend-mode: difference;
 }
 
 /* Scrollbar and highlights */
@@ -66,14 +61,6 @@ background-color: white;
 ::-webkit-scrollbar-thumb {
 background: #0744F5;
 border-radius: 5px;
-}
-::selection {
-    background: #DFFC60;
-    color: #000000;
-}
-::-moz-selection {
-    background: #DFFC60;
-    color: #000000;
 }
 .day-night-button {
     width: 60px;
@@ -876,7 +863,12 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         margin-right: 1rem;
         margin-bottom: 1rem;
     }
+    /* cursor */
+    .cursor {
+        display: none;
+    }
 }
+
 /* larger mobile screen */
 @media screen and (min-width: 576px) and (max-width: 767px) {
     /* navigation section */
@@ -1003,7 +995,10 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         margin-right: 1rem;
         margin-bottom: 1rem;
     }
-
+    /* cursor */
+    .cursor {
+        display: none;
+    }
 }
 /* mobile screen */
 @media screen and (max-width: 575px) {
@@ -1135,5 +1130,9 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 0.25rem;
         padding-left: 0.25rem;
         margin: 0;
+    }
+    /* cursor */
+    .cursor {
+        display: none;
     }
 }
