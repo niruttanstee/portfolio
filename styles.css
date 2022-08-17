@@ -1122,8 +1122,8 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
     }
     .contact-button, .contact-button:hover, .contact-button-light,
     .contact-button-light:hover {
-        margin-right: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
     /* footer section */
     .footer-wrapper {
