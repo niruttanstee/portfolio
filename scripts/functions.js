@@ -95,7 +95,7 @@ function closeMobileMenu() {
 
 // Triggers the day/night mode depending on the time
 function defaultDayNightState() {
-    let contentDiv = document.getElementsByClassName("day-night-wrapper");
+    let contentDiv = document.getElementsByClassName("logo");
     let status = contentDiv[0].id;
     let date = new Date();
     let hour = date.getHours();
@@ -120,7 +120,7 @@ function defaultDayNightState() {
 // between modes depending on the current state.
 function dayNightSwitch() {
     // check day-night wrapper id state and enable opposite
-    let contentDiv = document.getElementsByClassName("day-night-wrapper");
+    let contentDiv = document.getElementsByClassName("logo");
     let status = contentDiv[0].id;
     if (status === 'day') {
         // set night mode
