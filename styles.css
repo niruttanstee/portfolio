@@ -36,13 +36,13 @@ span {
     margin-right: 0.5rem;
 }
 .cursor {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border-style: solid;
     border-width: 3px;
     border-color: #0744F5;
-    background-color: #0744F5;
+    background-color: transparent;
     position: fixed;
     pointer-events: none;
     z-index: 99999;

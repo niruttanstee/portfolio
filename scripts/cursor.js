@@ -35,7 +35,7 @@ function notHover() {
     gsap.to(cursor, {
         duration: 0,
         opacity: 1,
-        backgroundColor: "#0744F5",
+        backgroundColor: "transparent",
     })
 }
 
@@ -44,7 +44,7 @@ function buttonHover() {
     // cursor
     gsap.to(cursor, {
         duration: 0,
-        backgroundColor: "transparent",
+        backgroundColor: "#0744F5",
     })
 }
  
@@ -55,7 +55,7 @@ function projectHover() {
         duration: 0,
         opacity: 0,
         x: "45px",
-        y: "-9.5px",
+        y: "-11px",
         width: "fit-content",
         src: "./assets/images/project-cursor.svg",
         ease: "power1.out"
@@ -67,7 +67,7 @@ function projectHover() {
     // cursor
     gsap.to(cursor, {
         duration: 0,
-        backgroundColor: "transparent",
+        backgroundColor: "#0744F5",
     })
 }
 
@@ -78,7 +78,7 @@ function githubHover() {
         duration: 0,
         opacity: 0,
         x: "45px",
-        y: "-9.5px",
+        y: "-11px",
         width: "fit-content",
         src: "./assets/images/github-cursor.svg",
     })
@@ -89,7 +89,7 @@ function githubHover() {
     // cursor
     gsap.to(cursor, {
         duration: 0,
-        backgroundColor: "transparent",
+        backgroundColor: "#0744F5",
     })
 }
 
@@ -115,7 +115,7 @@ function dayNightModeHover() {
     gsap.to(cursorContent, {
         duration: 0,
         opacity: 0,
-        x: "-90px",
+        x: "-95px",
         y: "45px",
         width: "fit-content",
         src: "./assets/images/toggle-cursor.svg",
@@ -127,6 +127,6 @@ function dayNightModeHover() {
     // cursor
     gsap.to(cursor, {
         duration: 0,
-        backgroundColor: "transparent",
+        backgroundColor: "#0744F5",
     })
 }
