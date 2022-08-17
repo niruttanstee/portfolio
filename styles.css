@@ -196,7 +196,7 @@ div.main-content-wrapper {
     background-color: #000000;
     z-index: 2;
     position: fixed;
-    height: 0%;
+    height: 0vh;
     width: 100%;
     top: 0;
     bottom: 0;

@@ -37,7 +37,7 @@ function openMobileMenu() {
     let mobileButton = document.getElementsByClassName("mobile-menu-button-wrapper")
     gsap.to(menu[0], {
         duration: 1,
-        height: "100%",
+        height: "100vh",
         ease: "power1.out"
     })
     gsap.to(menu[0], {
@@ -70,7 +70,7 @@ function closeMobileMenu() {
     gsap.to(menu[0], {
         delay: 0.2,
         duration: 1,
-        height: "0%",
+        height: "0vh",
         ease: "power1.out"
     })
     gsap.to(menu[0], {
