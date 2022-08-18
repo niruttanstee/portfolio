@@ -185,7 +185,6 @@ a {
 .preloader {
     height: 100vh;
     background-color: #000000;
-
 }
 div.main-content-wrapper {
     background-color: #F0F1F2;
@@ -300,14 +299,15 @@ div.main-content-wrapper {
     background-color: #222529;
 }
 span.letter, .illustration, .about-letter, .contact-letter, .contact-gradient,
-.contact-buttons-wrapper {
+.contact-buttons-wrapper,  .about-knowledge-labels-wrapper {
     display: inline-block;
     opacity: 0;
     transform: translateY(20px);
 }
 a.project-wrapper, .about-knowledge-labels-wrapper {
+    display: inline-block;
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(50px);
 }
 .project-year-label {
     font-family: "nirutt-standard-font", sans-serif;
