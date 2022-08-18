@@ -1,1 +1,1194 @@
-.contact-button:hover,body{background-color:#000}#end-letter-contact,#end-letter-header,.mobile-menu{margin-right:0}.mobile-menu-button-wrapper,.mobile-navigation-bar,.navigation-bar{visibility:hidden;opacity:0}@font-face{font-family:nirutt-header-font;src:url(./assets/fonts/NHaasGroteskDSPro-55Rg.otf)}@font-face{font-family:nirutt-standard-font;src:url(./assets/fonts/52ce32a338a3057de64c3528a8571a7f.ttf);font-weight:400}@font-face{font-family:nirutt-standard-font;src:url(./assets/fonts/dae5654a2e5ffdaf0057259047ba7834.ttf);font-weight:500}@font-face{font-family:nirutt-standard-font;src:url(./assets/fonts/ac1dbc3a2cc16a39ee69152e60e7d608.ttf);font-weight:600}@font-face{font-family:nirutt-standard-font;src:url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);font-weight:700}*{cursor:none}html{scrollbar-color:#0744F5 transparent;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}span{margin-right:.5rem}.cursor{width:1rem;height:1rem;border-radius:100%;background-color:#f0f1f2;position:fixed;pointer-events:none;z-index:99999;mix-blend-mode:difference}::-webkit-scrollbar{width:8px;height:8px;background-color:#fff}::-webkit-scrollbar-thumb{background:#0744f5;border-radius:5px}.day-night-button{width:60px;height:28.18px;background-image:url("./assets/images/day-mode-switch.svg");background-size:contain;background-repeat:no-repeat}.project-bg-dark{background-color:#101010}.project-bg-green{background-color:#b4f3d1}.project-bg-blue{background-color:#b9e7f8}.project-bg-white{background-color:#fff}#contact-gradient{background:-webkit-linear-gradient(left,#ffc371,#ff5f6d);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.contact-buttons-wrapper{margin-top:4rem;padding-left:.75rem}.contact-button{color:#000;font-family:nirutt-standard-font,sans-serif;width:fit-content;padding:.8rem 1.5rem;border-radius:1rem;transition:.6s;border:.25rem solid #ebecef}.contact-button-light,.contact-button:hover{border-radius:1rem;font-family:nirutt-standard-font,sans-serif;padding:.8rem 1.5rem}.contact-button:hover{color:#f0f1f2;border-color:#000}.contact-button-light{color:#ebecef;width:fit-content;transition:.6s;border:.25rem solid #ebecef}.contact-button-light:hover{font-family:nirutt-standard-font,sans-serif;color:#f0f1f2;border-color:#222529;background-color:#222529;padding:.8rem 1.5rem;border-radius:1rem}.copyright-text,.website-text{font-family:nirutt-header-font,sans-serif}a{text-decoration:none}.project-discipline-wrapper{margin-top:2.5rem}#no-margin{margin-top:0}.project-discipline-label{font-family:nirutt-standard-font,sans-serif;font-weight:500;font-size:1rem;background-color:rgba(0,0,0,.05);padding:.5rem 1rem;margin-bottom:.5rem;border-radius:.5rem}.preloader{height:100vh;background-color:#000}div.main-content-wrapper{background-color:#f0f1f2;border-radius:5rem;padding-bottom:2rem}.mobile-menu{background-color:#000;z-index:2;position:fixed;height:0;width:100%;top:0;bottom:0;border-bottom-left-radius:5rem;border-bottom-right-radius:5rem;right:0}.navigation-bar{z-index:1}.mb-menu-button-close,.mobile-menu-button,.mobile-menu-button-white{width:fit-content;padding:.8rem 1.5rem;border-radius:1rem;transition:.6s}.desktop-menu-button,.mobile-menu-button{color:#000}.desktop-menu-button-white,.mb-menu-button-close,.mobile-menu-button-lg:hover,.mobile-menu-button-white{color:#f0f1f2}.mobile-menu-button:hover{color:#f0f1f2;background-color:#000;padding:.8rem 1.5rem;border-radius:1rem}.mb-menu-button-close:hover,.mobile-menu-button-white:hover{color:#f0f1f2;background-color:#222529;padding:.8rem 1.5rem;border-radius:1rem}.mobile-menu-button-lg{color:#f0f1f2;font-family:nirutt-standard-font,sans-serif;font-size:4rem;margin-bottom:1.5rem}.desktop-menu-button,.desktop-menu-button-white,.knowledge-descriptor,.knowledge-label,.project-description-text,.project-year-label{font-family:nirutt-standard-font,sans-serif;font-size:1rem}.desktop-menu-button,.desktop-menu-button-white{font-weight:400;width:fit-content;padding:.8rem 1.5rem;border-radius:1rem;margin-left:2.5rem;transition:.6s}.desktop-menu-button-white:hover,.desktop-menu-button:hover{font-family:nirutt-standard-font,sans-serif;font-weight:400;font-size:1rem;padding:.8rem 1.5rem;margin-left:2.5rem;border-radius:1rem}.desktop-menu-button:hover{color:#f0f1f2;background-color:#000}.desktop-menu-button-white:hover{color:#f0f1f2;background-color:#222529}.about-knowledge-labels-wrapper,.about-letter,.contact-buttons-wrapper,.contact-gradient,.contact-letter,.illustration,span.letter{display:inline-block;opacity:0;transform:translateY(20px)}.about-knowledge-labels-wrapper,a.project-wrapper{display:inline-block;opacity:0;transform:translateY(50px)}.project-year-label{font-weight:600}.project-description-text{font-weight:400}.knowledge-descriptor{color:#000}.knowledge-label{background-color:rgba(0,0,0,.05);color:#000;font-weight:500;padding:.5rem 1rem;border-radius:.5rem;margin-bottom:.5rem}@media screen and (min-width:1400px){.navigation-bar,.navigation-wrapper{width:100vw;margin:0;padding-right:2rem}.mobile-menu,.mobile-menu-button,.mobile-menu-button-white{display:none}.navigation-bar{padding-top:2rem}.navigation-wrapper{padding-left:2rem}.contact-title-wrapper,.day-night-wrapper,.mobile-title-wrapper{width:fit-content}.contact-wrapper,.header-wrapper{margin-top:18rem;margin-bottom:18rem;padding-right:12rem;padding-left:12rem}.illustration-wrapper{width:0}.illustration{width:6rem}.letter{font-family:nirutt-header-font,sans-serif;font-size:6rem;line-height:6rem;color:#000}.project-section-wrapper{margin-top:-.5rem;padding-right:12rem;padding-left:12rem}.project-bg-dark{margin-bottom:0;border-radius:1.75rem;padding:2rem}.about-knowledge-descriptor-wrapper,.other-projects-wrapper{margin-top:3rem}.project-bg-blue,.project-bg-green,.project-bg-white{border-radius:1.75rem;padding:2rem;margin-bottom:3rem}.project-header-icon-wrapper{width:fit-content;padding-right:0}.project-header-icon{width:1.75rem}.project-header-title{margin-bottom:0;font-family:nirutt-standard-font,sans-serif;font-weight:700;font-size:1.45rem}.about-letter,.contact-gradient,.contact-letter,.github-link,.github-link:hover,.project-link-descriptor{font-family:nirutt-header-font,sans-serif}.project-year-wrapper{margin-top:.25rem}.project-link-descriptor{width:fit-content;margin-right:.25rem}.github-link,.github-link:hover{width:fit-content;color:#0744f5}.about-wrapper{margin-top:12rem;padding-right:12rem;padding-left:12rem}.about-letter{font-size:3rem;line-height:3.25rem;color:#000}.about-knowledge-labels-wrapper{margin-top:2rem}.contact-gradient,.contact-letter{font-size:4.25rem;line-height:4.5rem}.footer-wrapper{padding-right:11.25rem;padding-left:11.25rem}.contact-button,.contact-button-light,.contact-button-light:hover,.contact-button:hover{margin-right:1.5rem;margin-bottom:1.5rem}}@media screen and (min-width:1200px) and (max-width:1399px){.navigation-bar,.navigation-wrapper{width:100vw;margin:0;padding-right:2rem}.mobile-menu,.mobile-menu-button,.mobile-menu-button-white{display:none}.navigation-wrapper{padding-top:2rem;padding-left:2rem}.contact-title-wrapper,.day-night-wrapper,.mobile-title-wrapper{width:fit-content}.contact-wrapper,.header-wrapper{margin-top:15rem;margin-bottom:15rem;padding-right:9rem;padding-left:9rem}.illustration-wrapper{width:0}.illustration{width:5.5rem}.letter{font-family:nirutt-header-font,sans-serif;font-size:5.5rem;line-height:5.5rem;color:#000}.project-section-wrapper{margin-top:-4rem;padding-right:9rem;padding-left:9rem}.project-bg-dark{margin-bottom:0;border-radius:1.75rem;padding:2rem}.other-projects-wrapper{margin-top:2.75rem}.project-bg-blue,.project-bg-green,.project-bg-white{border-radius:1.75rem;padding:2rem;margin-bottom:2.75rem}.project-header-icon-wrapper{width:fit-content;padding-right:0}.project-header-icon{width:1.75rem}.project-header-title{margin-bottom:0;font-family:nirutt-standard-font,sans-serif;font-weight:700;font-size:1.45rem}.about-letter,.contact-gradient,.contact-letter,.github-link,.github-link:hover,.project-link-descriptor{font-family:nirutt-header-font,sans-serif}.project-year-wrapper{margin-top:.25rem}.project-link-descriptor{width:fit-content;margin-right:.25rem}.github-link,.github-link:hover{width:fit-content;color:#0744f5}.about-wrapper{margin-top:10rem;padding-right:9rem;padding-left:9rem}.about-letter{font-size:3rem;line-height:3.25rem;color:#000}.about-knowledge-descriptor-wrapper{margin-top:3rem}.about-knowledge-labels-wrapper{margin-top:2rem}.contact-gradient,.contact-letter{font-size:3.75rem;line-height:4rem}.footer-wrapper{padding-right:8.25rem;padding-left:8.25rem}.contact-button,.contact-button-light,.contact-button-light:hover{margin-right:1.5rem;margin-bottom:1.5rem}}@media screen and (min-width:992px) and (max-width:1199px){.mobile-menu,.mobile-menu-button,.mobile-menu-button-white{display:none}.navigation-bar{width:100vw;padding-right:2rem;margin-top:3rem}.navigation-wrapper{width:100vw;margin-left:0;padding-top:2rem;padding-right:2rem;padding-left:2rem}.contact-title-wrapper,.day-night-wrapper,.mobile-title-wrapper{width:fit-content}.header-wrapper{width:100vw;padding:11.25rem 6rem;margin-top:8rem}.illustration-wrapper{width:0}.illustration{width:5.5rem}.letter{font-family:nirutt-header-font,sans-serif;font-size:4.5rem;line-height:4.5rem;color:#000}.project-section-wrapper{padding-right:6rem;padding-left:6rem}.project-bg-dark{margin-bottom:0;border-radius:1.75rem;padding:2rem}.about-knowledge-labels-wrapper,.other-projects-wrapper{margin-top:2rem}.project-bg-blue,.project-bg-green,.project-bg-white{border-radius:1.75rem;padding:2rem;margin-bottom:2.75rem}.project-header-icon-wrapper{width:fit-content;padding-right:0}.about-wrapper,.contact-wrapper{padding-right:6rem;padding-left:6rem}.project-header-icon{width:1.75rem}.project-header-title{margin-bottom:0;font-family:nirutt-standard-font,sans-serif;font-weight:700;font-size:1.45rem}.about-letter,.contact-gradient,.contact-letter,.github-link,.github-link:hover,.project-link-descriptor{font-family:nirutt-header-font,sans-serif}.project-year-wrapper{margin-top:.25rem}.project-link-descriptor{width:fit-content;margin-right:.25rem}.github-link,.github-link:hover{width:fit-content;color:#0744f5}.about-wrapper{margin-top:9rem}.about-letter{font-size:2.5rem;line-height:2.75rem;color:#000;margin-right:.2rem}.about-knowledge-descriptor-wrapper{margin-top:3rem}.contact-wrapper{margin-top:15rem;margin-bottom:15rem}.contact-gradient,.contact-letter{font-size:3.25rem;line-height:3.5rem}.footer-wrapper{padding-right:5.25rem;padding-left:5.25rem}.contact-button,.contact-button-light,.contact-button-light:hover,.contact-button:hover{margin-right:1rem;margin-bottom:1rem}}@media screen and (min-width:768px) and (max-width:991px){.mobile-menu-button-wrapper{padding-right:5.4rem;padding-left:5.4rem}.mobile-navigation-bar,.navigation-bar{width:100vw;padding-top:2rem;padding-right:2rem;margin:0}.mobile-navigation-wrapper,.navigation-wrapper{width:100vw;margin:0;padding-right:2rem;padding-left:2rem}.contact-wrapper,.header-wrapper,.project-section-wrapper{padding-right:1rem;padding-left:1rem}.cursor,.desktop-menu-button,.desktop-menu-button-white{display:none}.contact-wrapper,.header-wrapper{margin-top:15rem;margin-bottom:15rem}.illustration-wrapper{width:0}.illustration{width:4.5rem}.contact-title-wrapper,.mobile-title-wrapper{width:fit-content}.letter{font-family:nirutt-header-font,sans-serif;font-size:3.75rem;line-height:3.75rem;color:#000}.project-bg-dark{margin-bottom:0;border-radius:1.75rem;padding:2rem}.about-knowledge-labels-wrapper,.other-projects-wrapper{margin-top:2rem}.project-bg-blue,.project-bg-green,.project-bg-white{border-radius:1.75rem;padding:2rem;margin-bottom:2rem}.project-header-icon-wrapper{width:fit-content;padding-right:0}.project-header-icon{width:1.75rem}.project-header-title{margin-bottom:0;font-family:nirutt-standard-font,sans-serif;font-weight:700;font-size:1.45rem}.about-letter,.contact-gradient,.contact-letter,.github-link,.github-link:hover,.project-link-descriptor{font-family:nirutt-header-font,sans-serif}.project-year-wrapper{margin-top:.25rem}.project-discipline-wrapper{margin-top:2.5rem}.project-link-descriptor{width:fit-content;margin-right:.25rem}.github-link,.github-link:hover{width:fit-content;color:#0744f5}.about-wrapper{margin-top:8rem;padding-right:1rem;padding-left:1rem}.about-letter{font-size:2.5rem;line-height:2.75rem;color:#000;margin-right:.3rem}.about-knowledge-descriptor-wrapper{margin-top:3rem}.contact-gradient,.contact-letter{font-size:3rem;line-height:3.25rem}.contact-buttons-wrapper{margin-top:4rem;padding-left:.75rem}.footer-wrapper{padding-right:.25rem;padding-left:.25rem}.contact-button,.contact-button-light,.contact-button-light:hover,.contact-button:hover{margin-right:1rem;margin-bottom:1rem}}@media screen and (min-width:576px) and (max-width:767px){.mobile-menu-button-wrapper{padding-right:3.5rem;padding-left:3.5rem}.mobile-navigation-bar,.navigation-bar{padding-top:1.5rem;margin:0}.mobile-navigation-wrapper,.navigation-wrapper{width:100vw;padding-left:2rem;padding-right:2rem;margin-left:0;margin-right:0}.contact-wrapper,.header-wrapper,.project-section-wrapper{padding-right:1rem;padding-left:1rem}.cursor,.desktop-menu-button,.desktop-menu-button-white{display:none}.contact-wrapper,.header-wrapper{margin-top:12rem;margin-bottom:12rem}.illustration-wrapper{width:0}.illustration{width:4.5rem}.mobile-title-wrapper{width:fit-content}.letter{font-family:nirutt-header-font,sans-serif;font-size:3.5rem;line-height:3.5rem;color:#000}.project-bg-dark{margin-bottom:0;border-radius:1.75rem;padding:2rem}.other-projects-wrapper{margin-top:1.5rem}.project-bg-blue,.project-bg-green,.project-bg-white{border-radius:1.75rem;padding:2rem;margin-bottom:1.5rem}.project-header-icon-wrapper{width:fit-content;padding-right:0}.project-header-icon{width:1.75rem}.project-header-title{margin-bottom:0;font-family:nirutt-standard-font,sans-serif;font-weight:700;font-size:1.45rem}.about-letter,.contact-gradient,.contact-letter,.github-link,.github-link:hover,.project-link-descriptor{font-family:nirutt-header-font,sans-serif}.project-year-wrapper{margin-top:.25rem}.project-link-descriptor{width:fit-content;margin-right:.25rem}.github-link,.github-link:hover{width:fit-content;color:#0744f5}.about-wrapper{margin-top:8rem;padding-right:1rem;padding-left:1rem}.about-letter{font-size:2.25rem;line-height:2.5rem;color:#000;margin-right:.2rem}.about-knowledge-descriptor-wrapper{margin-top:3rem}.about-knowledge-labels-wrapper{margin-top:2rem}.contact-title-wrapper{width:fit-content;margin-right:1rem}.contact-gradient,.contact-letter{font-size:2.5rem;line-height:2.75rem}.footer-wrapper{padding-right:0;padding-left:0}.contact-button,.contact-button-light,.contact-button-light:hover,.contact-button:hover{margin-right:1rem;margin-bottom:1rem}}@media screen and (max-width:575px){.mobile-menu-button-wrapper{padding-right:2rem;padding-left:2rem}.mobile-navigation-bar,.navigation-bar{width:100vw;padding-top:1rem;margin:0}.mobile-navigation-wrapper,.navigation-wrapper{width:100vw;margin:0;padding-right:.25rem;padding-left:.25rem}.header-wrapper,.project-section-wrapper{padding-right:1rem;padding-left:1rem}.cursor,.desktop-menu-button,.desktop-menu-button-white{display:none}.header-wrapper{margin-top:10rem;margin-bottom:10rem}.illustration-wrapper{width:6rem}.illustration{width:4.5rem}.mobile-title-wrapper{width:min-content}.letter{font-family:nirutt-header-font,sans-serif;font-size:3.5rem;line-height:3.5rem;color:#000}.project-bg-dark{margin-bottom:0;border-radius:1.75rem;padding:2rem}.other-projects-wrapper{margin-top:1.5rem}.project-bg-blue,.project-bg-green,.project-bg-white{border-radius:1.75rem;padding:2rem;margin-bottom:1.5rem}.project-header-icon-wrapper{width:fit-content;padding-right:0}.about-wrapper,.contact-wrapper{padding-right:1rem;padding-left:1rem}.project-header-icon{width:1.75rem}.project-header-title{margin-bottom:0;font-family:nirutt-standard-font,sans-serif;font-weight:700;font-size:1.45rem}.contact-gradient,.contact-letter,.github-link,.github-link:hover,.project-link-descriptor,span.about-letter{font-family:nirutt-header-font,sans-serif}.project-year-wrapper{margin-top:.25rem}.project-link-wrapper{margin-top:2rem;margin-bottom:2rem}.project-link-descriptor{width:fit-content;margin-right:.25rem}.github-link,.github-link:hover{width:fit-content;color:#0744f5}.about-wrapper{margin-top:6rem}span.about-letter{font-size:2rem;line-height:2.25rem;color:#000;margin-right:.2rem}.about-knowledge-descriptor-wrapper{margin-top:3rem}.about-knowledge-labels-wrapper{margin-top:2rem}.contact-title-wrapper{width:fit-content}.contact-wrapper{margin-top:12rem;margin-bottom:12rem}.contact-gradient,.contact-letter{font-size:2.5rem;line-height:2.75rem}.contact-button,.contact-button-light,.contact-button-light:hover,.contact-button:hover{margin-right:1rem;margin-bottom:1rem}.footer-wrapper{padding-right:.25rem;padding-left:.25rem;margin:0}}
+/* Font imports */
+@font-face {
+    font-family: nirutt-header-font;
+    src: url(./assets/fonts/NHaasGroteskDSPro-55Rg.otf);
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/52ce32a338a3057de64c3528a8571a7f.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/dae5654a2e5ffdaf0057259047ba7834.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/ac1dbc3a2cc16a39ee69152e60e7d608.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: nirutt-standard-font;
+    src: url(./assets/fonts/4c25ad540087c6c91e1a512489228e10.ttf);
+    font-weight: 700;
+}
+* {
+    cursor: none;
+}
+html {
+    scrollbar-color: #0744F5 transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    background-color:#000000;
+}
+span {
+    margin-right: 0.5rem;
+}
+.cursor {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #F0F1F2;
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
+    mix-blend-mode: difference;
+}
+
+/* Scrollbar and highlights */
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: white;
+}
+::-webkit-scrollbar-thumb {
+background: #0744F5;
+border-radius: 5px;
+}
+.day-night-button {
+    width: 60px;
+    height: 28.18px;
+    background-image: url("./assets/images/day-mode-switch.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#end-letter-header, #end-letter-contact {
+    margin-right: 0;
+}
+.project-bg-dark {
+    background-color: #101010;
+}
+.project-bg-green {
+    background-color: #B4F3D1;
+}
+.project-bg-blue {
+    background-color: #B9E7F8;
+}
+.project-bg-white {
+    background-color: #fff;
+}
+#contact-gradient {
+    background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-buttons-wrapper {
+    margin-top: 4rem;
+    padding-left: 0.75rem;
+}
+.contact-buttons-wrapper {
+    margin-top: 4rem;
+    padding-left: 0.75rem;
+}
+.contact-button {
+    color:black;
+    border-color: #EBECEF;
+    font-family: "nirutt-standard-font", sans-serif;
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    transition: 600ms;
+    border-style: solid;
+    border-width: 0.25rem;
+}
+.contact-button:hover {
+    font-family: "nirutt-standard-font", sans-serif;
+    color: #F0F1F2;
+    border-color: black;
+    background-color: black;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+}
+.contact-button-light {
+    color:#EBECEF;
+    border-color: #EBECEF;
+    font-family: "nirutt-standard-font", sans-serif;
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    transition: 600ms;
+    border-style: solid;
+    border-width: 0.25rem;
+}
+.contact-button-light:hover {
+    font-family: "nirutt-standard-font", sans-serif;
+    color: #F0F1F2;
+    border-color: #222529;
+    background-color: #222529;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+}
+.copyright-text, .website-text {
+    font-family: "nirutt-header-font", sans-serif;
+}
+.knowledge-label {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; 
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+} 
+a {
+    text-decoration: none;
+}
+.project-discipline-wrapper {
+    margin-top: 2.5rem;
+}
+#no-margin {
+    margin-top: 0;
+}
+.project-discipline-label {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; 
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+/* animation and transitions for preloader and default states */
+.preloader {
+    height: 100vh;
+    width: 100%;
+    background-color: #131313;
+    position: fixed;
+    z-index: 9999;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    transform: translateY(100vh);
+    opacity: 1;
+}
+div.main-content-wrapper {
+    padding-bottom: 2rem;
+}
+.mobile-menu {
+    background-color: #000000;
+    z-index: 2;
+    position: fixed;
+    height: 0vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    right: 0;
+    margin-right: 0;
+}
+.mobile-navigation-bar {
+    opacity: 0;
+    visibility: hidden;
+}
+.mobile-menu-button-wrapper {
+    opacity: 0;
+    visibility: hidden;
+}
+.navigation-bar {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.mobile-menu-button, .mobile-menu-button-white, 
+.mb-menu-button-close {
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    transition: 600ms;
+}
+.mobile-menu-button {
+    color: black;
+}
+.mobile-menu-button-white, .mb-menu-button-close {
+    color: #F0F1F2;
+}
+.mobile-menu-button:hover {
+    color: #F0F1F2;
+    background-color: black;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+}
+.mobile-menu-button-white:hover, .mb-menu-button-close:hover {
+    color: #F0F1F2;
+    background-color: #222529;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+}
+.mobile-menu-button-lg {
+    color: #F0F1F2;
+    font-family: "nirutt-standard-font",sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.mobile-menu-button-lg:hover {
+    color: #F0F1F2;
+}
+.desktop-menu-button, .desktop-menu-button-white {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: fit-content;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    margin-left: 2.5rem;
+    transition: 600ms;
+}
+.desktop-menu-button:hover, .desktop-menu-button-white:hover {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+}
+.desktop-menu-button {
+    color: #000000;
+}
+.desktop-menu-button:hover {
+    color: #F0F1F2;
+    background-color: #000000;
+}
+.desktop-menu-button-white {
+    color: #F0F1F2;
+}
+.desktop-menu-button-white:hover {
+    color: #F0F1F2;
+    background-color: #222529;
+}
+span.letter, .illustration, .about-letter, .contact-letter, .contact-gradient,
+.contact-buttons-wrapper,  .about-knowledge-labels-wrapper {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+}
+a.project-wrapper, .about-knowledge-labels-wrapper {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.project-year-label {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;    
+}
+.project-description-text {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;  
+}
+.knowledge-descriptor {
+    font-family: "nirutt-standard-font", sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+.knowledge-label {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+    font-family: "nirutt-standard-font", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; 
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/* extra large desktop screen */
+@media screen and (min-width: 1400px) {
+    /* navigation section */
+    .mobile-menu {
+        display: none;
+    }
+    .navigation-bar {
+        width: 100vw;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .day-night-wrapper {
+        width: fit-content;
+    }
+    .mobile-menu-button, .mobile-menu-button-white {
+        display: none;
+    }
+    /* header section */
+    .header-wrapper {
+        margin-top: 18rem;
+        margin-bottom: 18rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .illustration-wrapper {
+        width: 0rem;
+    }
+    .illustration {
+        width: 6rem;
+    }
+    .mobile-title-wrapper {
+        width:fit-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 6rem;
+        line-height: 6rem;
+        color: black;
+    }
+    /* project section */
+    .project-section-wrapper {
+        margin-top: -0.5rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 3rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
+        border-radius: 1.75rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 12rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .about-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3rem;
+        line-height: 3.25rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 18rem;
+        margin-bottom: 18rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+    .contact-letter, .contact-gradient {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 4.25rem;
+        line-height: 4.5rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 11.25rem;
+        padding-left: 11.25rem;
+    }
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+/* large desktop screen */
+@media screen and (min-width: 1200px) and (max-width:1399px) {
+    /* navigation section */
+    .mobile-menu {
+        display: none
+    }
+    .navigation-bar {
+        width: 100vw;
+        padding-right: 2rem;
+        margin: 0;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        padding-top: 2rem;
+        margin: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .day-night-wrapper {
+        width: fit-content;
+    }
+    .mobile-menu-button, .mobile-menu-button-white {
+        display: none;
+    }
+    /* header section */
+    .header-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .illustration-wrapper {
+        width: 0rem;
+    }
+    .illustration {
+        width: 5.5rem;
+    }
+    .mobile-title-wrapper {
+        width:fit-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+        color: black;
+    }
+    /* project section */
+    .project-section-wrapper {
+        margin-top: -4rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top:2.75rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
+        border-radius: 1.75rem;
+        padding: 2rem;
+        margin-bottom: 2.75rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 10rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .about-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3rem;
+        line-height: 3.25rem;
+        color: black;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+    .contact-letter, .contact-gradient {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.75rem;
+        line-height: 4rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 8.25rem;
+        padding-left: 8.25rem;
+    }
+    .contact-button, .contact-button-light,
+    .contact-button-light:hover {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+/* desktop screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* navigation section */
+    .mobile-menu {
+        display: none
+    }
+    .navigation-bar {
+        width: 100vw;
+        padding-right: 2rem;
+        margin-top: 3rem;
+    }
+    .navigation-wrapper {
+        width: 100vw;
+        margin-left: 0rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .day-night-wrapper {
+        width: fit-content;
+    }
+    .mobile-menu-button, .mobile-menu-button-white {
+        display: none;
+    }
+    .header-wrapper {
+        width: 100vw;
+        padding-top: 11.25rem;
+        padding-right: 6rem;
+        padding-bottom: 11.25rem;
+        padding-left: 6rem;
+    }
+    /* header section */
+    .header-wrapper {
+        margin-top: 8rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .illustration-wrapper {
+        width: 0rem;
+    }
+    .illustration {
+        width: 5.5rem;
+    }
+    .mobile-title-wrapper {
+        width:fit-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        color: black;
+    }
+    /* project section */
+    .project-section-wrapper {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 2rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
+        border-radius: 1.75rem;
+        padding: 2rem;
+        margin-bottom: 2.75rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 9rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .about-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        color: black;
+        margin-right: 0.2rem;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .contact-letter, .contact-gradient {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.25rem;
+        line-height: 3.5rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 5.25rem;
+        padding-left: 5.25rem;
+    }
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+/* tablet screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* navigation section */
+    .mobile-menu-button-wrapper {
+        padding-right: 5.4rem;
+        padding-left: 5.4rem;
+    }
+    .navigation-bar, .mobile-navigation-bar{
+        width: 100vw;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+    }
+    .navigation-wrapper, .mobile-navigation-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .desktop-menu-button, .desktop-menu-button-white {
+        display: none;
+    }
+    /* header section */
+    .header-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .illustration-wrapper {
+        width: 0rem;
+    }
+    .illustration {
+        width: 4.5rem;
+    }
+    .mobile-title-wrapper {
+        width:fit-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.75rem;
+        line-height: 3.75rem;
+        color: black;
+    }
+    /* project section */
+    .project-section-wrapper {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 2rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
+        border-radius: 1.75rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-discipline-wrapper {
+        margin-top: 2.5rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .about-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        color: black;
+        margin-right: 0.3rem;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-letter, .contact-gradient {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3rem;
+        line-height: 3.25rem;
+    }
+    .contact-buttons-wrapper {
+        margin-top: 4rem;
+        padding-left: 0.75rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+    }
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* cursor */
+    .cursor {
+        display: none;
+    }
+}
+
+/* larger mobile screen */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* navigation section */
+    .mobile-menu-button-wrapper {
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+    .navigation-bar, .mobile-navigation-bar {
+        padding-top: 1.5rem;
+        margin: 0;
+    }
+    .navigation-wrapper, .mobile-navigation-wrapper {
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .desktop-menu-button, .desktop-menu-button-white {
+        display: none;
+    }
+    /* header section */
+    .header-wrapper {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .illustration-wrapper {
+        width: 0rem;
+    }
+    .illustration {
+        width: 4.5rem;
+    }
+    .mobile-title-wrapper {
+        width:fit-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        color: black;
+    }
+    /* project section */
+    .project-section-wrapper {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 1.5rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
+        border-radius: 1.75rem;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .about-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        color: black;
+        margin-right: 0.2rem;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }  
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+        margin-right: 1rem;
+    }
+    .contact-wrapper {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-letter, .contact-gradient {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* cursor */
+    .cursor {
+        display: none;
+    }
+}
+/* mobile screen */
+@media screen and (max-width: 575px) {
+    /* navigation section */
+    .mobile-menu-button-wrapper {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .navigation-bar, .mobile-navigation-bar {
+        width: 100vw;
+        padding-top: 1rem;
+        margin: 0;
+    }
+    .navigation-wrapper, .mobile-navigation-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+    }
+    .desktop-menu-button, .desktop-menu-button-white {
+        display: none;
+    }
+    /* header section */
+    .header-wrapper {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .illustration-wrapper {
+        width: 6rem;
+    }
+    .illustration {
+        width: 4.5rem;
+    }
+    .mobile-title-wrapper {
+        width:min-content;
+    }
+    .letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        color: black;
+    }
+    /* project section */
+    .project-section-wrapper {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 1.5rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white{
+        border-radius: 1.75rem;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .project-header-icon-wrapper {
+        width: fit-content;
+        padding-right: 0;
+    }
+    .project-header-icon {
+        width: 1.75rem;
+    }
+    .project-header-title {
+        margin-bottom: 0;
+        font-family: "nirutt-standard-font", sans-serif;
+        font-weight: 700;
+        font-size: 1.45rem;
+    }
+    .project-year-wrapper {
+        margin-top: 0.25rem;
+    }
+    .project-link-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .project-link-descriptor {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        margin-right: 0.25rem;
+
+    }
+    .github-link, .github-link:hover {
+        font-family: "nirutt-header-font", sans-serif;
+        width: fit-content;
+        color: #0744F5;
+    }
+    /* about section */
+    .about-wrapper {
+        margin-top: 6rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    span.about-letter {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        color: black;
+        margin-right: 0.2rem;
+    }
+    .about-knowledge-descriptor-wrapper {
+        margin-top: 3rem;
+    }
+    .about-knowledge-labels-wrapper {
+        margin-top: 2rem;
+    }
+
+    /* contact section 
+    - mountain icon uses properties of class illustration */
+    .contact-title-wrapper {
+        width: fit-content;
+    }
+    .contact-wrapper {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-letter, .contact-gradient {
+        font-family: "nirutt-header-font", sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+    .contact-button, .contact-button:hover, .contact-button-light,
+    .contact-button-light:hover {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* footer section */
+    .footer-wrapper {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+        margin: 0;
+    }
+    /* cursor */
+    .cursor {
+        display: none;
+    }
+}

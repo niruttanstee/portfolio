@@ -1,1 +1,412 @@
-<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Nirutt Anstee</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> <link rel="stylesheet" href="style.css"> <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg"> </head> <body class="align-self-start justify-content-center"> <div class="mobile-menu row align-items-center"> <div class="mobile-navigation-bar navbar fixed-top"> <div class="mobile-navigation-wrapper row"> <div class="col align-self-center"> <a class="nav-logo-wrapper" onclick="closeMobileMenu(), scrollToTop()"> <picture> <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo-light.svg"> <img src="./assets/logos/desktop-logo-light.svg" alt="Nirutt Anstee website logo"> </picture> </a> </div><div class="col align-self-center"> <div class="row justify-content-end"> <a class="mb-menu-button-close text-end text-wrap" onclick="closeMobileMenu()" onmouseenter="onHover()" onmouseleave="offHover()">Close</a> </div></div></div></div><div class="mobile-menu-button-wrapper d-flex flex-column"> <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollWork()" onmouseenter="onHover()" onmouseleave="offHover()">Work</a> <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollAbout()" onmouseenter="onHover()" onmouseleave="offHover()">About</a> <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollContact()" onmouseenter="onHover()" onmouseleave="offHover()">Contact</a> </div></div><div class="navigation-bar navbar-nav fixed-top"> <div class="navigation-wrapper row"> <div class="col align-self-center"> <a class="nav-logo-wrapper" onclick="scrollToTop()" onmouseenter="onHover()" onmouseleave="offHover()"> <picture class="logo" id="day"> <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo.svg"> <img src="./assets/logos/desktop-logo.svg" alt="Nirutt Anstee website logo"> </picture> </a> </div><div class="day-night-wrapper col col-lg-1 align-self-center"> <div class="row justify-content-center"> <a class="day-night-button" onclick="dayNightSwitch()" onmouseenter="onHover()" onmouseleave="offHover()"></a> </div></div><div class="col align-self-center"> <div class="row justify-content-end"> <a class="mobile-menu-button text-end text-wrap" onclick="openMobileMenu()" onmouseenter="onHover()" onmouseleave="offHover()">Menu</a> <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollWork()" onmouseenter="onHover()" onmouseleave="offHover()">Work</a> <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollAbout()" onmouseenter="onHover()" onmouseleave="offHover()">About</a> <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollContact()" onmouseenter="onHover()" onmouseleave="offHover()">Contact</a> </div></div></div></div><div class="preloader"></div><div id="scroll-section-1" class="main-content-wrapper overflow-hidden"> <div class="header-wrapper container"> <div class="header-inner-wrapper row justify-content-start"> <div class="mobile-title-wrapper col-1 justify-content-start flex-wrap"> <h1 class="header-title overflow-hidden"> <span class="letter">I'm</span> <span class="letter">Nirutt,</span> <br><span class="letter">a</span> <span class="letter">software</span> <span class="letter">engineer</span> <br><span class="letter">based</span> <span class="letter">in</span> <span class="letter" id="end-letter-header">Eastbourne</span> </h1> </div><div class="illustration-wrapper col-1 align-self-end"> <img class="illustration" src="./assets/images/seal.png" alt="A seal 3D illustration"> </div></div></div><div id="scroll-section-2" class="project-section-wrapper container"> <a class="project-wrapper" href="https://github.com" onmouseenter="onHover()" onmouseleave="offHover()"> <div class="project-bg-dark"> <div class="project-header-wrapper row justify-content-start"> <div class="project-header-icon-wrapper col-1 align-self-center"> <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon"> </div><div class="project-header-title-wrapper col align-self-center"> <h4 class="project-header-title text-white">RapidChannels</h4> </div></div><div class="project-year-wrapper"> <p class="project-year-label text-white">2022</p></div><div class="project-description-wrapper"> <p class="project-description-text text-white"> A Discord bot that help guilds stay clean and organised by creating temporary channels when a member requires one, and automatically removing it when it becomes inactive. </p></div><div class="project-discipline-wrapper d-flex flex-wrap"> <span class="project-discipline-label text-white bg-dark">Python</span> <span class="project-discipline-label text-white bg-dark">Discord API</span> <span class="project-discipline-label text-white bg-dark">MongoDB</span> </div></div></a> <div class="other-projects-wrapper row justify-content-center gx-lg-5"> <div class="second-project col-lg"> <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()"> <div class="project-bg-green"> <div class="project-header-wrapper row justify-content-start"> <div class="project-header-icon-wrapper col-1 align-self-center"> <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon"> </div><div class="project-header-title-wrapper col align-self-center"> <h4 class="project-header-title text-black">RapidChannels</h4> </div></div><div class="project-year-wrapper"> <p class="project-year-label text-black">2022</p></div><div class="project-description-wrapper"> <p class="project-description-text text-black"> A Discord bot that help guilds stay clean and organised by creating temporary channels when a member requires one, and automatically removing it when it becomes inactive. </p></div><div class="project-discipline-wrapper d-flex flex-wrap"> <span class="project-discipline-label text-black">Python</span> <span class="project-discipline-label text-black">Discord API</span> <span class="project-discipline-label text-black">MongoDB</span> </div></div></a> </div><div class="third-project col-lg"> <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()"> <div class="project-bg-blue"> <div class="project-header-wrapper row justify-content-start"> <div class="project-header-icon-wrapper col-1 align-self-center"> <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon"> </div><div class="project-header-title-wrapper col align-self-center"> <h4 class="project-header-title text-black">RapidChannels</h4> </div></div><div class="project-year-wrapper"> <p class="project-year-label text-black">2022</p></div><div class="project-description-wrapper"> <p class="project-description-text text-black"> A Discord bot that help guilds stay clean and organised by creating temporary channels when a member requires one, and automatically removing it when it becomes inactive. </p></div><div class="project-discipline-wrapper d-flex flex-wrap"> <span class="project-discipline-label text-black">Python</span> <span class="project-discipline-label text-black">Discord API</span> <span class="project-discipline-label text-black">MongoDB</span> </div></div></a> </div></div><div class="other-projects-wrapper row justify-content-center gx-lg-5" id="no-margin"> <div class="fourth-project col-lg"> <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()"> <div class="project-bg-white"> <div class="project-header-wrapper row justify-content-start"> <div class="project-header-icon-wrapper col-1 align-self-center"> <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon"> </div><div class="project-header-title-wrapper col align-self-center"> <h4 class="project-header-title text-black">RapidChannels</h4> </div></div><div class="project-year-wrapper"> <p class="project-year-label text-black">2022</p></div><div class="project-description-wrapper"> <p class="project-description-text text-black"> A Discord bot that help guilds stay clean and organised by creating temporary channels when a member requires one, and automatically removing it when it becomes inactive. </p></div><div class="project-discipline-wrapper d-flex flex-wrap"> <span class="project-discipline-label text-black">Python</span> <span class="project-discipline-label text-black">Discord API</span> <span class="project-discipline-label text-black">MongoDB</span> </div></div></a> </div><div class="fifth-project col-lg"> <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()"> <div class="project-bg-white"> <div class="project-header-wrapper row justify-content-start"> <div class="project-header-icon-wrapper col-1 align-self-center"> <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon"> </div><div class="project-header-title-wrapper col align-self-center"> <h4 class="project-header-title text-black">RapidChannels</h4> </div></div><div class="project-year-wrapper"> <p class="project-year-label text-black">2022</p></div><div class="project-description-wrapper"> <p class="project-description-text text-black"> A Discord bot that help guilds stay clean and organised by creating temporary channels when a member requires one, and automatically removing it when it becomes inactive. </p></div><div class="project-discipline-wrapper d-flex flex-wrap"> <span class="project-discipline-label text-black">Python</span> <span class="project-discipline-label text-black">Discord API</span> <span class="project-discipline-label text-black">MongoDB</span> </div></div></a> </div><div class="project-link-wrapper row justify-content-center gx-0"> <span class="project-link-descriptor col-1">To see all work, head over to my</span> <a class="github-link col-1 text-decoration-underline" href="https://github.com/niruttanstee" onmouseenter="onHover()" onmouseleave="offHover()">GitHub page</a> </div></div></div><div id="scroll-section-3" class="about-wrapper container"> <div class="about-header-wrapper overflow-hidden"> <span class="about-letter">Passionate</span> <span class="about-letter">at</span> <span class="about-letter">writing</span> <span class="about-letter">clean</span> <span class="about-letter">code</span> <span class="about-letter">in</span> <span class="about-letter">solving</span> <span class="about-letter">real-world</span> <span class="about-letter">problems</span> <span class="about-letter">and</span> <span class="about-letter">motivated</span> <span class="about-letter">to</span> <span class="about-letter">gain</span> <span class="about-letter">industry</span> <span class="about-letter">experience.</span> <span class="about-letter">I’m</span> <span class="about-letter">a</span> <span class="about-letter">final-year</span> <span class="about-letter">undergraduate</span> <span class="about-letter">studying</span> <span class="about-letter">BSc</span> <span class="about-letter">Hons</span> <span class="about-letter">in</span> <span class="about-letter">Computing</span> <span class="about-letter">and</span> <span class="about-letter">IT.</span> <span class="about-letter">Proficient</span> <span class="about-letter">in</span> <span class="about-letter">Python</span> <span class="about-letter">and</span> <span class="about-letter">Java</span> <span class="about-letter">with</span> <span class="about-letter">experience</span> <span class="about-letter">in</span> <span class="about-letter">frontend</span> <span class="about-letter">languages</span> <span class="about-letter">such</span> <span class="about-letter">as</span> <span class="about-letter">JavaScript,</span> <span class="about-letter">HTML/CSS</span> <span class="about-letter">and</span> <span class="about-letter">Bootstrap.</span> </div><div class="about-knowledge-descriptor-wrapper"> <p class="knowledge-descriptor">I have knowledge in</p></div><div class="about-knowledge-labels-wrapper d-flex flex-wrap overflow-hidden"> <span class="knowledge-label">Algorithms and data structures</span> <span class="knowledge-label">Object oriented programming</span> <span class="knowledge-label">Software engineering</span> <span class="knowledge-label">Cyber security</span> <span class="knowledge-label">Data analysis</span> <span class="knowledge-label">Web technologies</span> <span class="knowledge-label">Mathematics</span> </div></div><div class="contact-wrapper container"> <div id="scroll-section-4" class="contact-header-wrapper row justify-content-start"> <div class="contact-title-wrapper col-1 justify-content-start flex-wrap overflow-hidden"> <span class="contact-letter">I'm</span> <span class="contact-letter">up</span> <span class="contact-letter">for</span> <span class="contact-letter">new</span> <span class="contact-gradient" id="contact-gradient">adventures</span> <br><span class="contact-letter">and</span> <span class="contact-letter">I'd</span> <span class="contact-letter">like</span> <span class="contact-letter">to</span> <span class="contact-letter">work</span> <span class="contact-letter">with</span> <span class="contact-letter" id="end-letter-contact">you</span> </div><div class="illustration-wrapper col-1 align-self-end"> <img class="illustration" src="./assets/images/mountain.png" alt="A 3D mountain icon depicting adventure."> </div></div><div class="contact-buttons-wrapper row justify-content-start d-flex"> <a class="contact-button col-1 text-center" href="mailto:contact@nirutt.dev" onmouseenter="onHover()" onmouseleave="offHover()">Email</a> <a class="contact-button col-1 text-center" href="https://www.linkedin.com/in/niruttanstee/" onmouseenter="onHover()" onmouseleave="offHover()">LinkedIn</a> <a class="contact-button col-1 text-center" href="https://github.com/niruttanstee" onmouseenter="onHover()" onmouseleave="offHover()">GitHub</a> </div></div><footer class="container"> <div class="footer-wrapper row justify-content-center"> <div class="website-text-wrapper col"> <p class="website-text col">Made by Nirutt Anstee</p></div><div class="copyright-wrapper col row justify-content-end"> <p class="copyright-text text-end"></p><script>let date=new Date; let copyright=document.getElementsByClassName("copyright-text"); copyright[0].innerHTML=`© ${date.getFullYear()}`; </script> </div></div></footer> </div><div class="cursor"></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script> <script src="script.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nirutt Anstee - Software Engineer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+    </head>
+    <body class="align-self-start justify-content-center">
+        <!--mobile menu-->
+        <div class="mobile-menu row align-items-center">
+            <!--mobile menu header nav -->
+            <div class="mobile-navigation-bar navbar fixed-top">
+                <div class="mobile-navigation-wrapper row">
+                    <!--mobile navigation logo-->
+                    <div class="col align-self-center">
+                        <a class="nav-logo-wrapper" onclick="closeMobileMenu(), scrollToTop()">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo-light.svg">
+                                <img src="./assets/logos/desktop-logo-light.svg" alt="Nirutt Anstee website logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="row justify-content-end">
+                            <!--mobile close menu button-->
+                            <a class="mb-menu-button-close text-end text-wrap" onclick="closeMobileMenu()" onmouseenter="onHover()" onmouseleave="offHover()">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--mobile menu button-->
+            <div class="mobile-menu-button-wrapper d-flex flex-column">
+                <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollWork()" onmouseenter="onHover()" onmouseleave="offHover()">Work</a>
+                <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollAbout()" onmouseenter="onHover()" onmouseleave="offHover()">About</a>
+                <a class="mobile-menu-button-lg align-self-end" onclick="closeMobileMenu(), scrollContact()" onmouseenter="onHover()" onmouseleave="offHover()">Contact</a>
+            </div>
+        </div>
+        <!--navigation-->
+        <div class="navigation-bar navbar-nav fixed-top">
+            <div class="navigation-wrapper row">
+                <!--navigation logo-->
+                <div class="col align-self-center">
+                    <a class="nav-logo-wrapper" onclick="scrollToTop()" onmouseenter="onHover()" onmouseleave="offHover()">
+                        <picture class="logo" id="day">
+                            <source media="(max-width: 576px)" srcset="./assets/logos/mobile-logo.svg">
+                            <img src="./assets/logos/desktop-logo.svg" alt="Nirutt Anstee website logo">
+                        </picture>
+                    </a>
+                </div>
+                <!--day/night mode toggle button-->
+                <div class="day-night-wrapper col col-lg-1 align-self-center">
+                    <div class="row justify-content-center">
+                        <a class="day-night-button" onclick="dayNightSwitch()" onmouseenter="onHover()" onmouseleave="offHover()"></a>
+                    </div>
+                </div>
+                <!--menu-->
+                <div class="col align-self-center">
+                    <div class="row justify-content-end">
+                        <!--mobile menu-->
+                        <a class="mobile-menu-button text-end text-wrap" onclick="openMobileMenu()" onmouseenter="onHover()" onmouseleave="offHover()">Menu</a>
+                        <!--tablet/desktop menu-->
+                        <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollWork()" onmouseenter="onHover()" onmouseleave="offHover()">Work</a>
+                        <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollAbout()" onmouseenter="onHover()" onmouseleave="offHover()">About</a>
+                        <a class="desktop-menu-button text-end text-wrap text-center" onclick="scrollContact()" onmouseenter="onHover()" onmouseleave="offHover()">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preloader"></div>
+        <div id="scroll-section-1" class="main-content-wrapper overflow-hidden">
+            <!--header section-->
+            <div class="header-wrapper container">
+                <div class="header-inner-wrapper row justify-content-start">
+                    <!--header title-->
+                    <div class="mobile-title-wrapper col-1 justify-content-start flex-wrap">
+                        <h1 class="header-title overflow-hidden">
+                            <span class="letter">I'm</span>
+                            <span class="letter">Nirutt,</span>
+                            <br>
+                            <span class="letter">a</span>
+                            <span class="letter">software</span>
+                            <span class="letter">engineer</span>
+                            <br>
+                            <span class="letter">based</span>
+                            <span class="letter">in</span>
+                            <span class="letter" id="end-letter-header">Eastbourne</span>
+                        </h1>
+                    </div>
+                    <!--header illustration-->
+                    <div class="illustration-wrapper col-1 align-self-end">
+                        <img class="illustration" src="./assets/images/seal.png" alt="A seal 3D illustration">
+                    </div>
+                </div>
+            </div>
+            <!--project section-->
+            <div id="scroll-section-2" class="project-section-wrapper container">
+                <!--main project display-->
+                <a class="project-wrapper" href="https://github.com" onmouseenter="onHover()" onmouseleave="offHover()">
+                    <div class="project-bg-dark">
+                        <!--header-->
+                        <div class="project-header-wrapper row justify-content-start">
+                            <!--header icon-->
+                            <div class="project-header-icon-wrapper col-1 align-self-center">
+                                <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon">
+                            </div>
+                            <!--header title-->
+                            <div class="project-header-title-wrapper col align-self-center">
+                                <h4 class="project-header-title text-white">RapidChannels</h4>
+                            </div>
+                        </div>
+                        <!--year published-->
+                        <div class="project-year-wrapper">
+                            <p class="project-year-label text-white">2022</p>
+                        </div>
+                        <!--description-->
+                        <div class="project-description-wrapper">
+                            <p class="project-description-text text-white">
+                                A Discord bot that help guilds stay clean and 
+                                organised by creating temporary channels when a 
+                                member requires one, and automatically removing it 
+                                when it becomes inactive.
+                            </p>
+                        </div>
+                        <!--discipline-->
+                        <div class="project-discipline-wrapper d-flex flex-wrap">
+                            <span class="project-discipline-label text-white bg-dark">Python</span>
+                            <span class="project-discipline-label text-white bg-dark">Discord API</span>
+                            <span class="project-discipline-label text-white bg-dark">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
+                <!--projects 2 and 3-->
+                <div class="other-projects-wrapper row justify-content-center gx-lg-5">
+                    <div class="second-project col-lg">
+                        <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()">
+                            <div class="project-bg-green">
+                                <!--header-->
+                                <div class="project-header-wrapper row justify-content-start">
+                                    <!--header icon-->
+                                    <div class="project-header-icon-wrapper col-1 align-self-center">
+                                        <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon">
+                                    </div>
+                                    <!--header title-->
+                                    <div class="project-header-title-wrapper col align-self-center">
+                                        <h4 class="project-header-title text-black">RapidChannels</h4>
+                                    </div>
+                                </div>
+                                <!--year published-->
+                                <div class="project-year-wrapper">
+                                    <p class="project-year-label text-black">2022</p>
+                                </div>
+                                <!--description-->
+                                <div class="project-description-wrapper">
+                                    <p class="project-description-text text-black">
+                                        A Discord bot that help guilds stay clean and 
+                                        organised by creating temporary channels when a 
+                                        member requires one, and automatically removing it 
+                                        when it becomes inactive.
+                                    </p>
+                                </div>
+                                <!--discipline-->
+                                <div class="project-discipline-wrapper d-flex flex-wrap">
+                                    <span class="project-discipline-label text-black">Python</span>
+                                    <span class="project-discipline-label text-black">Discord API</span>
+                                    <span class="project-discipline-label text-black">MongoDB</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="third-project col-lg">
+                        <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()">
+                            <div class="project-bg-blue">
+                                <!--header-->
+                                <div class="project-header-wrapper row justify-content-start">
+                                    <!--header icon-->
+                                    <div class="project-header-icon-wrapper col-1 align-self-center">
+                                        <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon">
+                                    </div>
+                                    <!--header title-->
+                                    <div class="project-header-title-wrapper col align-self-center">
+                                        <h4 class="project-header-title text-black">RapidChannels</h4>
+                                    </div>
+                                </div>
+                                <!--year published-->
+                                <div class="project-year-wrapper">
+                                    <p class="project-year-label text-black">2022</p>
+                                </div>
+                                <!--description-->
+                                <div class="project-description-wrapper">
+                                    <p class="project-description-text text-black">
+                                        A Discord bot that help guilds stay clean and 
+                                        organised by creating temporary channels when a 
+                                        member requires one, and automatically removing it 
+                                        when it becomes inactive.
+                                    </p>
+                                </div>
+                                <!--discipline-->
+                                <div class="project-discipline-wrapper d-flex flex-wrap">
+                                    <span class="project-discipline-label text-black">Python</span>
+                                    <span class="project-discipline-label text-black">Discord API</span>
+                                    <span class="project-discipline-label text-black">MongoDB</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--projects 4 and 5-->
+                <div class="other-projects-wrapper row justify-content-center gx-lg-5" id="no-margin">
+                    <div class="fourth-project col-lg">
+                        <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()">
+                            <div class="project-bg-white">
+                                <!--header-->
+                                <div class="project-header-wrapper row justify-content-start">
+                                    <!--header icon-->
+                                    <div class="project-header-icon-wrapper col-1 align-self-center">
+                                        <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon">
+                                    </div>
+                                    <!--header title-->
+                                    <div class="project-header-title-wrapper col align-self-center">
+                                        <h4 class="project-header-title text-black">RapidChannels</h4>
+                                    </div>
+                                </div>
+                                <!--year published-->
+                                <div class="project-year-wrapper">
+                                    <p class="project-year-label text-black">2022</p>
+                                </div>
+                                <!--description-->
+                                <div class="project-description-wrapper">
+                                    <p class="project-description-text text-black">
+                                        A Discord bot that help guilds stay clean and 
+                                        organised by creating temporary channels when a 
+                                        member requires one, and automatically removing it 
+                                        when it becomes inactive.
+                                    </p>
+                                </div>
+                                <!--discipline-->
+                                <div class="project-discipline-wrapper d-flex flex-wrap">
+                                    <span class="project-discipline-label text-black">Python</span>
+                                    <span class="project-discipline-label text-black">Discord API</span>
+                                    <span class="project-discipline-label text-black">MongoDB</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fifth-project col-lg">
+                        <a class="project-wrapper" href="#" onmouseenter="onHover()" onmouseleave="offHover()">
+                            <div class="project-bg-white">
+                                <!--header-->
+                                <div class="project-header-wrapper row justify-content-start">
+                                    <!--header icon-->
+                                    <div class="project-header-icon-wrapper col-1 align-self-center">
+                                        <img class="project-header-icon" src="./assets/images/rapidchannels-icon.svg" alt="Project one icon">
+                                    </div>
+                                    <!--header title-->
+                                    <div class="project-header-title-wrapper col align-self-center">
+                                        <h4 class="project-header-title text-black">RapidChannels</h4>
+                                    </div>
+                                </div>
+                                <!--year published-->
+                                <div class="project-year-wrapper">
+                                    <p class="project-year-label text-black">2022</p>
+                                </div>
+                                <!--description-->
+                                <div class="project-description-wrapper">
+                                    <p class="project-description-text text-black">
+                                        A Discord bot that help guilds stay clean and 
+                                        organised by creating temporary channels when a 
+                                        member requires one, and automatically removing it 
+                                        when it becomes inactive.
+                                    </p>
+                                </div>
+                                <!--discipline-->
+                                <div class="project-discipline-wrapper d-flex flex-wrap">
+                                    <span class="project-discipline-label text-black">Python</span>
+                                    <span class="project-discipline-label text-black">Discord API</span>
+                                    <span class="project-discipline-label text-black">MongoDB</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--link to GitHub-->
+                    <div class="project-link-wrapper row justify-content-center gx-0">
+                        <span class="project-link-descriptor col-1">To see all work, head over to my</span>
+                        <a class="github-link col-1 text-decoration-underline" href="https://github.com/niruttanstee" onmouseenter="onHover()" onmouseleave="offHover()">GitHub page</a>
+                    </div>
+                </div>
+            </div>
+            <!--about section-->
+            <div id="scroll-section-3" class="about-wrapper container">
+                <!--about header-->
+                <div class="about-header-wrapper overflow-hidden">
+                    <span class="about-letter">Passionate</span>
+                    <span class="about-letter">at</span>
+                    <span class="about-letter">writing</span>
+                    <span class="about-letter">clean</span>
+                    <span class="about-letter">code</span>
+                    <span class="about-letter">in</span>
+                    <span class="about-letter">solving</span>
+                    <span class="about-letter">real-world</span>
+                    <span class="about-letter">problems</span>
+                    <span class="about-letter">and</span>
+                    <span class="about-letter">motivated</span>
+                    <span class="about-letter">to</span>
+                    <span class="about-letter">gain</span>
+                    <span class="about-letter">industry</span>
+                    <span class="about-letter">experience.</span>
+                    <span class="about-letter">I’m</span>
+                    <span class="about-letter">a</span>
+                    <span class="about-letter">final-year</span>
+                    <span class="about-letter">undergraduate</span>
+                    <span class="about-letter">studying</span>
+                    <span class="about-letter">BSc</span>
+                    <span class="about-letter">Hons</span>
+                    <span class="about-letter">in</span>
+                    <span class="about-letter">Computing</span>
+                    <span class="about-letter">and</span>
+                    <span class="about-letter">IT.</span>
+                    <span class="about-letter">Proficient</span>
+                    <span class="about-letter">in</span>
+                    <span class="about-letter">Python</span>
+                    <span class="about-letter">and</span>
+                    <span class="about-letter">Java</span>
+                    <span class="about-letter">with</span>
+                    <span class="about-letter">experience</span>
+                    <span class="about-letter">in</span>
+                    <span class="about-letter">frontend</span>
+                    <span class="about-letter">languages</span>
+                    <span class="about-letter">such</span>
+                    <span class="about-letter">as</span>
+                    <span class="about-letter">JavaScript,</span>
+                    <span class="about-letter">HTML/CSS</span>
+                    <span class="about-letter">and</span>
+                    <span class="about-letter">Bootstrap.</span>
+                </div>
+                <!--about knowledge descriptor-->
+                <div class="about-knowledge-descriptor-wrapper">
+                    <p class="knowledge-descriptor">I have knowledge in</p>
+                </div>
+                <!--about knowledge label-->
+                <div class="about-knowledge-labels-wrapper d-flex flex-wrap overflow-hidden">
+                    <span class="knowledge-label">Algorithms and data structures</span>
+                    <span class="knowledge-label">Object oriented programming</span>
+                    <span class="knowledge-label">Software engineering</span>
+                    <span class="knowledge-label">Cyber security</span>
+                    <span class="knowledge-label">Data analysis</span>
+                    <span class="knowledge-label">Web technologies</span>
+                    <span class="knowledge-label">Mathematics</span>
+                </div>
+            </div>
+            <!--contact section-->
+            <div class="contact-wrapper container">
+                <!--contact header and icon-->
+                <div id="scroll-section-4" class="contact-header-wrapper row justify-content-start">
+                    <!--contact title-->
+                    <div class="contact-title-wrapper col-1 justify-content-start flex-wrap overflow-hidden">
+                        <span class="contact-letter">I'm</span>
+                        <span class="contact-letter">up</span>
+                        <span class="contact-letter">for</span>
+                        <span class="contact-letter">new</span>
+                        <span class="contact-gradient" id="contact-gradient">adventures</span>
+                        <br>
+                        <span class="contact-letter">and</span>
+                        <span class="contact-letter">I'd</span>
+                        <span class="contact-letter">like</span>
+                        <span class="contact-letter">to</span>
+                        <span class="contact-letter">work</span>
+                        <span class="contact-letter">with</span>
+                        <span class="contact-letter" id="end-letter-contact">you</span>
+                    </div>
+                    <!--contact illustration-->
+                    <div class="illustration-wrapper col-1 align-self-end">
+                        <img class="illustration" src="./assets/images/mountain.png" alt="A 3D mountain icon depicting adventure.">
+                    </div>
+                </div>
+                <!--contact buttons-->
+                <div class="contact-buttons-wrapper row justify-content-start d-flex">
+                    <a class="contact-button col-1 text-center" href="mailto:contact@nirutt.dev" onmouseenter="onHover()" onmouseleave="offHover()">Email</a>
+                    <a class="contact-button col-1 text-center" href="https://www.linkedin.com/in/niruttanstee/" onmouseenter="onHover()" onmouseleave="offHover()">LinkedIn</a>
+                    <a class="contact-button col-1 text-center" href="https://github.com/niruttanstee" onmouseenter="onHover()" onmouseleave="offHover()">GitHub</a>
+                </div>
+            </div>
+            <!--footer section-->
+            <footer class="container">
+                <div class="footer-wrapper row justify-content-center">
+                    <div class="website-text-wrapper col">
+                        <p class="website-text col">Made by Nirutt Anstee</p>
+                    </div>
+                    <div class="copyright-wrapper col row justify-content-end">
+                        <p class="copyright-text text-end"></p>
+                        <script>
+                            let date = new Date;
+                            let copyright = document.getElementsByClassName("copyright-text");
+                            copyright[0].innerHTML = `© ${date.getFullYear()}`;
+                        </script>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--cursor-->
+        <div class="cursor"></div>
+        <!--scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script> <!--preloader-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+        <script src="script.js"></script>
+        </body>
+</html>

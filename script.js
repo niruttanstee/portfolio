@@ -26,9 +26,28 @@ enablePreloader();
 
 async function enablePreloader() {
     /* Preloader*/
+    // move preloader up
     gsap.to(preloader, {
         duration: 1, 
-        height: 0,
+        y: "0vh",
+        ease: "power1.out"
+    });
+    gsap.to(preloader, {
+        delay: 1.2,
+        duration: 0.25, 
+        opacity: 0,
+        ease: "power1.out"
+    });
+    gsap.to(preloader, {
+        delay: 1.55,
+        duration: 0.25, 
+        visibility: "hidden",
+        ease: "power1.out"
+    });
+    gsap.to(preloader, {
+        delay: 1,
+        duration: 0.25, 
+        borderRadius: 0,
         ease: "power1.out"
     });
     gsap.to(navBar, {
@@ -36,12 +55,6 @@ async function enablePreloader() {
         duration: 0.25, 
         opacity: 1,
         visibility: "visible",
-        ease: "power1.out"
-    });
-    gsap.to(mainWrapper[0], {
-        delay: 1,
-        duration: 0.25, 
-        borderRadius: 0,
         ease: "power1.out"
     });
     await sleep(1000);
@@ -885,22 +898,56 @@ function defaultDayNightState() {
     let status = contentDiv[0].id;
     let date = new Date();
     let hour = date.getHours();
-    /* if hours are between 8:00am and 18:00pm set day mode state,
-     otherwise set night mode state*/
+    let count = 0;
+    /*  if hours are between 8:00am and 18:00pm set day mode state,
+        otherwise set night mode state. 
+
+        Background color delay dependence on count. 
+        If count = 0, delay is 1.2s for first time page load, otherwise
+        delay is 0s.
+     */
     if (hour > 7 && hour < 19) {
         /* set day mode*/
         if (status === 'day') {
             return;
         }
         enableDayMode(contentDiv);
+        if (count === 0) {
+            // first time page load
+            gsap.to(mainWrapper[0], {
+                delay: 1,
+                duration: 0.25,
+                backgroundColor: "#F0F1F2",
+            })
+            count++;
+        } else {
+            gsap.to(mainWrapper[0], {
+                duration: 1,
+                backgroundColor: "#F0F1F2",
+            })
+        }
     } else {
         /* set night mode*/
         if (status === 'night') {
             return;
         }
         enableNightMode(contentDiv);
+        if (count === 0) {
+            // first time page load
+            gsap.to(mainWrapper[0], {
+                delay: 1,
+                duration: 0.25,
+                backgroundColor: "#131313",
+            })
+            count++;
+        } else {
+            gsap.to(mainWrapper[0], {
+                duration: 1,
+                backgroundColor: "#131313",
+            })
+        }
     }
-}
+};
 
 /*  Triggered by interaction with the day/night radio button, switches
     between modes depending on the current state.*/
@@ -911,9 +958,17 @@ function dayNightSwitch() {
     if (status === 'day') {
         /* set night mode*/
         enableNightMode(contentDiv);
+        gsap.to(mainWrapper[0], {
+            duration: 1,
+            backgroundColor: "#131313",
+        })
     } else {
         /* set day mode*/
         enableDayMode(contentDiv);
+        gsap.to(mainWrapper[0], {
+            duration: 1,
+            backgroundColor: "#F0F1F2",
+        })
     }
 }  
 
@@ -960,13 +1015,6 @@ function enableDayMode(contentDiv) {
     contactButton[0].classList.replace("contact-button-light", "contact-button");
     /* github button*/
     contactButton[0].classList.replace("contact-button-light", "contact-button");
-
-    /* gsap - set day mode*/
-    gsap.to(mainContentWrapper[0], {
-        duration: 1,
-        backgroundColor: "#F0F1F2",
-        ease: "power1.out"
-    })
 
     /* header section*/
     gsap.to(headerLetter[0], {
@@ -1386,13 +1434,6 @@ function enableNightMode(contentDiv) {
     contactButton[0].classList.replace("contact-button", "contact-button-light");
     /* Github button*/
     contactButton[0].classList.replace("contact-button", "contact-button-light");
-
-    /* gsap - set night mode*/
-    gsap.to(mainContentWrapper[0], {
-        duration: 1,
-        backgroundColor: "#131313",
-        ease: "power1.out"
-    })
 
     /* header section*/
     gsap.to(headerLetter[0], {
