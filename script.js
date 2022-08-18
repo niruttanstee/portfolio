@@ -1,15 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
-// Credit
+/* Credit */
 const author = "Nirutt Anstee"
 const site = "nirutt.com"
 console.info("Made by " + author + "\n" + site);
 
-// Onload trigger event
+/* Onload trigger event*/
 window.onload = (event) => {
     defaultDayNightState();
 };
-// transition texts for header when page load and  about header when on view
-// fetch elements
+/* transition texts for header when page load and  about header when on view,
+ fetch elements*/
 let preloader = document.getElementsByClassName('preloader')[0];
 let navBar = document.getElementsByClassName('navigation-bar');
 let mainWrapper = document.getElementsByClassName('main-content-wrapper');
@@ -25,7 +25,7 @@ let contactButton = document.getElementsByClassName("contact-buttons-wrapper");
 enablePreloader();
 
 async function enablePreloader() {
-    // Preloader
+    /* Preloader*/
     gsap.to(preloader, {
         duration: 1, 
         height: 0,
@@ -48,10 +48,10 @@ async function enablePreloader() {
     enableAnimations();
 }
 
-// refreshes scroll trigger for new position after tween preloader
+/* refreshes scroll trigger for new position after tween preloader*/
 function enableAnimations() {
     ScrollTrigger.refresh();
-    // Header (8 elements + 1 illustration[0] element)
+    /* Header (8 elements + 1 illustration[0] element)*/
     gsap.to(headElements[0], {
         delay: 0,
         duration: 0.25, 
@@ -115,7 +115,7 @@ function enableAnimations() {
         opacity: 1,  
         ease: "power1.out"
     });
-    // Project (5 elements)
+    /* Project (5 elements)*/
     gsap.to(project[0], {
         delay: 0.45,
         duration: 0.25, 
@@ -166,7 +166,7 @@ function enableAnimations() {
         ease: "power1.out"
     });
 
-    // About Header (41 elements + 1 knowledge label wrapper)
+    /* About Header (41 elements + 1 knowledge label wrapper)*/
     gsap.to(aboutElements[0], {
         scrollTrigger: {
              trigger: aboutElements[0],
@@ -641,7 +641,7 @@ function enableAnimations() {
         ease: "power1.out"
     });
 
-    // Contact Section (11 elements + 1 illustration)
+    /* Contact Section (11 elements + 1 illustration)*/
     gsap.to(contactElements[0], {
         scrollTrigger: { 
             trigger: contactElements[0],
@@ -779,7 +779,7 @@ function enableAnimations() {
         ease: "power1.out"
     });
 
-    // Contact Button Wrapper (1 element)
+    /* Contact Button Wrapper (1 element)*/
     gsap.to(contactButton[0], {
         scrollTrigger: contactElements[0],
         delay: 0.65,
@@ -798,7 +798,7 @@ function sleep(ms) {
 *   All functions for all sections of the website.
 */
 
-// Scroll to certain sections of the page
+/* Scroll to certain sections of the page*/
 function scrollToTop() {
     let position = document.getElementById("scroll-section-1");
     window.scrollTo({top: position.offsetTop, behavior: 'smooth'});
@@ -816,7 +816,7 @@ function scrollContact() {
     window.scrollTo({top: position.offsetTop, behavior: 'smooth'});
 }
 
-// Opens mobile menu
+/* Opens mobile menu*/
 function openMobileMenu() {
     let menu = document.getElementsByClassName("mobile-menu");
     let mobileNav = document.getElementsByClassName("mobile-navigation-bar");
@@ -848,7 +848,7 @@ function openMobileMenu() {
     })
 }
 
-// Closes mobile menu
+/* Closes mobile menu*/
 function closeMobileMenu() {
     let menu = document.getElementsByClassName("mobile-menu");
     let mobileNav = document.getElementsByClassName("mobile-navigation-bar");
@@ -879,22 +879,22 @@ function closeMobileMenu() {
     })
 }
 
-// Triggers the day/night mode depending on the time
+/* Triggers the day/night mode depending on the time*/
 function defaultDayNightState() {
     let contentDiv = document.getElementsByClassName("logo");
     let status = contentDiv[0].id;
     let date = new Date();
     let hour = date.getHours();
-    // if hours are between 8:00am and 18:00pm set day mode state,
-    // otherwise set night mode state
+    /* if hours are between 8:00am and 18:00pm set day mode state,
+     otherwise set night mode state*/
     if (hour > 7 && hour < 19) {
-        // set day mode
+        /* set day mode*/
         if (status === 'day') {
             return;
         }
         enableDayMode(contentDiv);
     } else {
-        // set night mode
+        /* set night mode*/
         if (status === 'night') {
             return;
         }
@@ -902,34 +902,34 @@ function defaultDayNightState() {
     }
 }
 
-// Triggered by interaction with the day/night radio button, switches
-// between modes depending on the current state.
+/*  Triggered by interaction with the day/night radio button, switches
+    between modes depending on the current state.*/
 function dayNightSwitch() {
-    // check day-night wrapper id state and enable opposite
+    /* check day-night wrapper id state and enable opposite*/
     let contentDiv = document.getElementsByClassName("logo");
     let status = contentDiv[0].id;
     if (status === 'day') {
-        // set night mode
+        /* set night mode*/
         enableNightMode(contentDiv);
     } else {
-        // set day mode
+        /* set day mode*/
         enableDayMode(contentDiv);
     }
 }  
 
-// Enables day mode state.
+/* Enables day mode state.*/
 function enableDayMode(contentDiv) {
-    // day-night wrapper set source srcset media and img src
+    /* day-night wrapper set source srcset media and img src*/
     let button = document.getElementsByClassName("day-night-button"); 
     let content = contentDiv[0];
     let firstChild = content.firstElementChild;
     let lastChild = content.lastElementChild;
     firstChild.setAttribute('srcset', './assets/logos/mobile-logo.svg');
     lastChild.setAttribute('src', './assets/logos/desktop-logo.svg');
-    // set day-night wrapper id to day
+    /* set day-night wrapper id to day*/
     content.id = "day";
     
-    // get elements
+    /* get elements*/
     let mainContentWrapper = document.getElementsByClassName("main-content-wrapper");
     let mobileMenuButton = document.getElementsByClassName("mobile-menu-button-white");
     let headerLetter = document.getElementsByClassName("letter");
@@ -943,32 +943,32 @@ function enableDayMode(contentDiv) {
     let copyrightText = document.getElementsByClassName("copyright-text");
     let desktopMenuButton = document.getElementsByClassName("desktop-menu-button-white");
 
-    // day/night radio button
+    /* day/night radio button*/
     button[0].style.backgroundImage = "url('./assets/images/day-mode-switch.svg')";
 
-    // mobile menu button
+    /* mobile menu button*/
     mobileMenuButton[0].classList.replace("mobile-menu-button-white", "mobile-menu-button");
-    // desktop menu button - work
+    /* desktop menu button - work*/
     desktopMenuButton[0].classList.replace("desktop-menu-button-white", "desktop-menu-button");
-    // desktop menu button - about
+    /* desktop menu button - about*/
     desktopMenuButton[0].classList.replace("desktop-menu-button-white", "desktop-menu-button");
-    // desktop menu button - contact
+    /* desktop menu button - contact*/
     desktopMenuButton[0].classList.replace("desktop-menu-button-white", "desktop-menu-button");
-    // email button
+    /* email button*/
     contactButton[0].classList.replace("contact-button-light", "contact-button");
-    // linkedIn button
+    /* linkedIn button*/
     contactButton[0].classList.replace("contact-button-light", "contact-button");
-    // github button
+    /* github button*/
     contactButton[0].classList.replace("contact-button-light", "contact-button");
 
-    // gsap - set day mode
+    /* gsap - set day mode*/
     gsap.to(mainContentWrapper[0], {
         duration: 1,
         backgroundColor: "#F0F1F2",
         ease: "power1.out"
     })
 
-    // header section
+    /* header section*/
     gsap.to(headerLetter[0], {
         duration: 1,
         color: "#000",
@@ -1009,13 +1009,13 @@ function enableDayMode(contentDiv) {
         color: "#000",
         ease: "power1.out"
     })
-    // projects section
+    /* projects section*/
     gsap.to(projectLinkDescriptor[0], {
         duration: 1,
         color: "#000",
         ease: "power1.out"
     })
-    // about section
+    /* about section*/
     gsap.to(aboutLetter[0], {
         duration: 1,
         color: "#000",
@@ -1274,7 +1274,7 @@ function enableDayMode(contentDiv) {
         ease: "power1.out"
     })
 
-    // contact section
+    /* contact section*/
     gsap.to(contactLetter[0], {
         duration: 1,
         color: "#000",
@@ -1331,7 +1331,7 @@ function enableDayMode(contentDiv) {
         ease: "power1.out"
     })
 
-    // footer section
+    /* footer section*/
     gsap.to(websiteText, {
         duration: 1,
         color: "#000",
@@ -1344,19 +1344,19 @@ function enableDayMode(contentDiv) {
     })
 }
 
-// Enables night mode state.
+/* Enables night mode state.*/
 function enableNightMode(contentDiv) {
-    // day-night wrapper set source srcset media and img src 
+    /* day-night wrapper set source srcset media and img src */
     let button = document.getElementsByClassName("day-night-button");
     let content = contentDiv[0];
     let firstChild = content.firstElementChild;
     let lastChild = content.lastElementChild;
     firstChild.setAttribute('srcset', './assets/logos/mobile-logo-light.svg');
     lastChild.setAttribute('src', './assets/logos/desktop-logo-light.svg');
-    // set day-night wrapper id to night
+    /* set day-night wrapper id to night*/
     content.id = "night";
 
-    // get elements
+    /* get elements*/
     let mainContentWrapper = document.getElementsByClassName("main-content-wrapper");
     let mobileMenuButton = document.getElementsByClassName("mobile-menu-button");
     let headerLetter = document.getElementsByClassName("letter");
@@ -1370,31 +1370,31 @@ function enableNightMode(contentDiv) {
     let copyrightText = document.getElementsByClassName("copyright-text");
     let desktopMenuButton = document.getElementsByClassName("desktop-menu-button");
 
-    // day/night radio button
+    /* day/night radio button*/
     button[0].style.backgroundImage = "url('./assets/images/night-mode-switch.svg')";
-    // menu Button
+    /* menu Button*/
     mobileMenuButton[0].classList.replace("mobile-menu-button", "mobile-menu-button-white");
-    // desktop menu button - Work
+    /* desktop menu button - Work*/
     desktopMenuButton[0].classList.replace("desktop-menu-button", "desktop-menu-button-white");
-    // desktop menu button - About
+    /* desktop menu button - About*/
     desktopMenuButton[0].classList.replace("desktop-menu-button", "desktop-menu-button-white");
-    // desktop menu button - Contact
+    /* desktop menu button - Contact*/
     desktopMenuButton[0].classList.replace("desktop-menu-button", "desktop-menu-button-white");
-    // Email button
+    /* Email button*/
     contactButton[0].classList.replace("contact-button", "contact-button-light");
-    // LinkedIn button
+    /* LinkedIn button*/
     contactButton[0].classList.replace("contact-button", "contact-button-light");
-    // Github button
+    /* Github button*/
     contactButton[0].classList.replace("contact-button", "contact-button-light");
 
-    // gsap - set night mode
+    /* gsap - set night mode*/
     gsap.to(mainContentWrapper[0], {
         duration: 1,
         backgroundColor: "#131313",
         ease: "power1.out"
     })
 
-    // header section
+    /* header section*/
     gsap.to(headerLetter[0], {
         duration: 1,
         color: "#F0F1F2",
@@ -1436,14 +1436,14 @@ function enableNightMode(contentDiv) {
         ease: "power1.out"
     })
 
-    // projects section
+    /* projects section*/
     gsap.to(projectLinkDescriptor[0], {
         duration: 1,
         color: "#F0F1F2",
         ease: "power1.out"
     })
 
-    // about section
+    /* about section*/
     gsap.to(aboutLetter[0], {
         duration: 1,
         color: "#F0F1F2",
@@ -1702,7 +1702,7 @@ function enableNightMode(contentDiv) {
         ease: "power1.out"
     })
     
-    // contact section
+    /* contact section*/
     gsap.to(contactLetter[0], {
         duration: 1,
         color: "#F0F1F2",
@@ -1759,7 +1759,7 @@ function enableNightMode(contentDiv) {
         ease: "power1.out"
     })
 
-    // footer section
+    /* footer section*/
     gsap.to(websiteText, {
         duration: 1,
         color: "#F0F1F2",
@@ -1773,7 +1773,7 @@ function enableNightMode(contentDiv) {
 }
 /* All cursor functions */
 let cursor = document.getElementsByClassName("cursor")[0];
-// inner cursor
+/* inner cursor*/
 document.addEventListener('mousemove',
     function(e){
         let x = e.clientX;
@@ -1782,7 +1782,7 @@ document.addEventListener('mousemove',
         cursor.style.top = (y - 10) + "px";
 });
 
-// Animate / reset cursor to default state
+/* Animate / reset cursor to default state*/
 function offHover() {
     gsap.to(cursor, {
         duration: 0.5,
@@ -1793,7 +1793,7 @@ function offHover() {
     })
 }
 
-// Animate cursor to on hover state
+/* Animate cursor to on hover state*/
 function onHover() {
     gsap.to(cursor, {
         duration: 0.5,
