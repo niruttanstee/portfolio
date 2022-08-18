@@ -389,7 +389,15 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 12rem;
         padding-left: 12rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 3rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 3rem;
@@ -518,7 +526,15 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 9rem;
         padding-left: 9rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top:2.75rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2.75rem;
@@ -652,7 +668,15 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 6rem;
         padding-left: 6rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 2rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2.75rem;
@@ -779,7 +803,15 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 2rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 2rem;
@@ -917,7 +949,15 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white {
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 1.5rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white {
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
@@ -1048,7 +1088,15 @@ a.project-wrapper, .about-knowledge-labels-wrapper {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .project-bg-dark, .project-bg-green, .project-bg-blue, .project-bg-white{
+    .project-bg-dark {
+        margin-bottom: 0rem;
+        border-radius: 1.75rem;
+        padding: 2rem;
+    }
+    .other-projects-wrapper {
+        margin-top: 1.5rem;
+    }
+    .project-bg-green, .project-bg-blue, .project-bg-white{
         border-radius: 1.75rem;
         padding: 2rem;
         margin-bottom: 1.5rem;
