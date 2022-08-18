@@ -169,6 +169,9 @@ a {
 .project-discipline-wrapper {
     margin-top: 2.5rem;
 }
+#no-margin {
+    margin-top: 0;
+}
 .project-discipline-label {
     font-family: "nirutt-standard-font", sans-serif;
     font-weight: 500;
