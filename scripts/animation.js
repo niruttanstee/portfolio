@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+window.innerHeight.resizeTo = "0";
+
 // transition texts for header when page load and  about header when on view
 // fetch elements
 let preloader = document.getElementsByClassName('preloader');
@@ -14,26 +16,24 @@ let contactGradient = document.getElementsByClassName('contact-gradient');
 let contactButton = document.getElementsByClassName("contact-buttons-wrapper");
 
 // Preloader
-gsap.to(preloader[0], {
-    duration: 1,
-    height: 0,
-    ease: "power1.out"
-})
-gsap.to(navBar, {
-    delay: 1.2,
-    duration: 0.25, 
-    opacity: 1,
-    visibility: "visible",
-    ease: "power1.out"
-})
-gsap.to(mainWrapper[0], {
-    delay: 1,
-    duration: 0.25, 
-    borderRadius: 0,
-    ease: "power1.out"
-})
-window.innerHeight = window.innerHeight * 2;
-
+// gsap.to(preloader[0], {
+//     duration: 1,
+//     height: 0,
+//     ease: "power1.out"
+// })
+// gsap.to(navBar, {
+//     delay: 1.2,
+//     duration: 0.25, 
+//     opacity: 1,
+//     visibility: "visible",
+//     ease: "power1.out"
+// })
+// gsap.to(mainWrapper[0], {
+//     delay: 1,
+//     duration: 0.25, 
+//     borderRadius: 0,
+//     ease: "power1.out"
+// })
 // Header (8 elements + 1 illustration[0] element)
 gsap.to(headElements[0], {
     delay: 1,
@@ -107,14 +107,18 @@ gsap.to(project[0], {
     ease: "power1.out"
 })
 gsap.to(project[1], {
-    scrollTrigger: project[1],
+    scrollTrigger: {
+        trigger: project[1],
+        start: "top bottom",
+        markers: true,
+    },
     duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
 })
 gsap.to(project[2], {
-    scrollTrigger: project[2],
+    // scrollTrigger: project[2],
     delay: 0.25,
     duration: 0.25, 
     y: 0, 
@@ -122,14 +126,14 @@ gsap.to(project[2], {
     ease: "power1.out"
 })
 gsap.to(project[3], {
-    scrollTrigger: project[3],
+    // scrollTrigger: project[3],
     duration: 0.25, 
     y: 0, 
     opacity: 1, 
     ease: "power1.out"
 })
 gsap.to(project[4], {
-    scrollTrigger: project[4],
+    // scrollTrigger: project[4],
     delay: 0.25,
     duration: 0.25, 
     y: 0, 

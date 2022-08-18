@@ -1,7 +1,7 @@
 /*  function.js
 *   All functions for all sections of the website.
 */
-
+gsap.registerPlugin(ScrollTrigger);
 // Credit
 const author = "Nirutt Anstee"
 const site = "nirutt.com"
