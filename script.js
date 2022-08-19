@@ -33,13 +33,13 @@ async function enablePreloader() {
         ease: "power1.out"
     });
     gsap.to(preloader, {
-        delay: 1.2,
+        delay: 1.4,
         duration: 0.25, 
         opacity: 0,
         ease: "power1.out"
     });
     gsap.to(preloader, {
-        delay: 1.55,
+        delay: 2,
         duration: 0.25, 
         visibility: "hidden",
         ease: "power1.out"
@@ -51,7 +51,7 @@ async function enablePreloader() {
         ease: "power1.out"
     });
     gsap.to(navBar, {
-        delay: 1.2,
+        delay: 1.4,
         duration: 0.25, 
         opacity: 1,
         visibility: "visible",
@@ -66,63 +66,63 @@ function enableAnimations() {
     ScrollTrigger.refresh();
     /* Header (8 elements + 1 illustration[0] element)*/
     gsap.to(headElements[0], {
-        delay: 0,
+        delay: 0.5,
         duration: 0.25, 
         y: 0, 
         opacity: 1, 
         ease: "power1.out"
     });
     gsap.to(headElements[1], {
-        delay: 0.05,
+        delay: 0.55,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(headElements[2], {
-        delay: 0.1,
+        delay: 0.6,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(headElements[3], {
-        delay: 0.15,
+        delay: 0.65,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(headElements[4], {
-        delay: 0.2,
+        delay: 0.7,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(headElements[5], {
-        delay: 0.25,
+        delay: 0.75,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(headElements[6], {
-        delay: 0.3,
+        delay: 0.8,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(headElements[7], {
-        delay: 0.35,
+        delay: 0.85,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
         ease: "power1.out"
     });
     gsap.to(illustration[0], {
-        delay: 0.4,
+        delay: 0.9,
         duration: 0.25, 
         y: 0, 
         opacity: 1,  
@@ -907,44 +907,33 @@ function defaultDayNightState() {
         delay is 0s.
      */
     if (hour > 7 && hour < 19) {
-        /* set day mode*/
+        gsap.to(preloader, {
+            delay: 0,
+            backgroundColor: "#F0F1F2",
+        });
+        gsap.to(mainWrapper[0], {
+            delay: 1.2,
+            duration: 0.25,
+            backgroundColor: "#F0F1F2",
+        });  
         if (status === 'day') {
             return;
         }
         enableDayMode(contentDiv);
-        if (count === 0) {
-            // first time page load
-            gsap.to(mainWrapper[0], {
-                delay: 1,
-                duration: 0.25,
-                backgroundColor: "#F0F1F2",
-            })
-            count++;
-        } else {
-            gsap.to(mainWrapper[0], {
-                duration: 1,
-                backgroundColor: "#F0F1F2",
-            })
-        }
     } else {
+        gsap.to(preloader, {
+            delay: 0,
+            backgroundColor: "#131313",
+        });
+        gsap.to(mainWrapper[0], {
+            delay: 1.2,
+            duration: 0.25,
+            backgroundColor: "#131313",
+        });  
+        enableNightMode(contentDiv);
         /* set night mode*/
         if (status === 'night') {
             return;
-        }
-        enableNightMode(contentDiv);
-        if (count === 0) {
-            // first time page load
-            gsap.to(mainWrapper[0], {
-                delay: 1,
-                duration: 0.25,
-                backgroundColor: "#131313",
-            })
-            count++;
-        } else {
-            gsap.to(mainWrapper[0], {
-                duration: 1,
-                backgroundColor: "#131313",
-            })
         }
     }
 };
@@ -985,7 +974,6 @@ function enableDayMode(contentDiv) {
     content.id = "day";
     
     /* get elements*/
-    let mainContentWrapper = document.getElementsByClassName("main-content-wrapper");
     let mobileMenuButton = document.getElementsByClassName("mobile-menu-button-white");
     let headerLetter = document.getElementsByClassName("letter");
     let projectLinkDescriptor = document.getElementsByClassName("project-link-descriptor");
@@ -1405,7 +1393,6 @@ function enableNightMode(contentDiv) {
     content.id = "night";
 
     /* get elements*/
-    let mainContentWrapper = document.getElementsByClassName("main-content-wrapper");
     let mobileMenuButton = document.getElementsByClassName("mobile-menu-button");
     let headerLetter = document.getElementsByClassName("letter");
     let projectLinkDescriptor = document.getElementsByClassName("project-link-descriptor");
