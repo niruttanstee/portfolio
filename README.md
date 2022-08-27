@@ -7,19 +7,12 @@ Live production: [https://nirutt.dev](https://nirutt.dev)
 ## About
 This public repository is my portfolio website written in pure HTML, CSS and JavaScript. It took me longer to decide on the design than it was for me to program it and I'm sure there will be changes in the future. 
 
-The goal for this site is to showcase my software engineering works while making the user feel like they're using an app. This website does not have dynamic content as the selected project cards are simple and limited to 5.
+The goal for this site is to showcase my software engineering works while making the user feel like they're using an app. This website does not have dynamic content as the selected project cards are simple and limited to 5 due to my goal.
 
-## Process
+This website is targeted for recruiters with the goal to get straight to the point in showcasing my projects.
 
-> Research and design: 2 weeks
+## Features
 
-I used Figma to create preliminary designs and settled for a minimalist style to focus the reader's attention on the most important of things, i.e. the projects. 
-
-> Programming: 5 days
-
-While learning Bootstrap, i started with coding the website using VS Code. After learning the basics it already had made it possible for me to create the website faster than previously by setting predefined styles straight onto HTML. However, it was still essential for me to use pure CSS for fine-tuning.
-
-After the structure, I began using JavaScript to create functions such as buttons and overwhelmingly complex animations with GSAP. 
-
-Afterwords, I received feedback to improve the site and made changes before pushing it into production.
-
+1. Light and dark mode automatically switches dependent on local time of client. 
+2. On scroll transitions using Gsap javascript library.
+3. Interactive mouse on hover effect.
