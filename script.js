@@ -1309,6 +1309,18 @@ function enableDayMode(contentDiv) {
         backgroundColor: "#000",
         ease: "power1.out"
     })
+    gsap.to(knowledgeLabel[7], {
+        duration: 1,
+        color: "#F0F1F2",
+        backgroundColor: "#000",
+        ease: "power1.out"
+    })
+    gsap.to(knowledgeLabel[8], {
+        duration: 1,
+        color: "#F0F1F2",
+        backgroundColor: "#000",
+        ease: "power1.out"
+    })
 
     /* contact section*/
     gsap.to(contactLetter[0], {
@@ -1724,6 +1736,18 @@ function enableNightMode(contentDiv) {
         ease: "power1.out"
     })
     gsap.to(knowledgeLabel[6], {
+        duration: 1,
+        color: "#F0F1F2",
+        backgroundColor: "#222529",
+        ease: "power1.out"
+    })
+    gsap.to(knowledgeLabel[7], {
+        duration: 1,
+        color: "#F0F1F2",
+        backgroundColor: "#222529",
+        ease: "power1.out"
+    })
+    gsap.to(knowledgeLabel[8], {
         duration: 1,
         color: "#F0F1F2",
         backgroundColor: "#222529",
