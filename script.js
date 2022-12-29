@@ -1684,16 +1684,6 @@ function enableNightMode(contentDiv) {
         color: "#F0F1F2",
         ease: "power1.out"
     })    
-    gsap.to(aboutLetter[40], {
-        duration: 1,
-        color: "#F0F1F2",
-        ease: "power1.out"
-    })    
-    gsap.to(aboutLetter[41], {
-        duration: 1,
-        color: "#F0F1F2",
-        ease: "power1.out"
-    })
     gsap.to(knowledgeDescriptor[0], {
         duration: 1,
         color: "#F0F1F2",
